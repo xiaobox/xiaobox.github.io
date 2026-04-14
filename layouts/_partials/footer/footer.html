@@ -22,10 +22,21 @@
                 <span class="visitor-badge__label">次翻阅</span>
             </span>
         </span>
+        <span class="visitor-badge visitor-badge--solo" data-metric="personal">
+            <span class="visitor-badge__icon" aria-hidden="true" data-personal-icon>🌱</span>
+            <span class="visitor-badge__phrase" data-personal-text>初次见面</span>
+        </span>
     </section>
 </footer>
 
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<button class="back-to-top" type="button" aria-label="回到顶部" data-back-to-top>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 19 L12 6 M6 12 L12 6 L18 12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="back-to-top__label">Top</span>
+</button>
+
+<script defer src="https://events.vercount.one/js"></script>
 
 <script>
 /* 阅读进度条（仅文章详情页） */
@@ -47,6 +58,92 @@
     window.addEventListener('scroll', update, { passive: true });
     window.addEventListener('resize', update, { passive: true });
     update();
+})();
+
+/* 个人徽章：基于 localStorage 的"距上次访问"，纯前端、立即显示 */
+(function () {
+    var iconEl = document.querySelector('[data-personal-icon]');
+    var textEl = document.querySelector('[data-personal-text]');
+    if (!iconEl || !textEl) return;
+
+    var KEY = 'xiaobox_last_visit';
+    var DAY = 86400000;
+    var now = Date.now();
+    var raw;
+    try { raw = localStorage.getItem(KEY); } catch (_) { return; }
+
+    var phrase, icon;
+    var last = raw ? parseInt(raw, 10) : NaN;
+
+    if (!raw || isNaN(last)) {
+        icon = '🌱'; phrase = '初次见面';
+    } else {
+        var diff = now - last;
+        // 日历日差：按本地 00:00 对齐，避免"刚过午夜被算 0 天"的尴尬
+        var startOfDay = function (t) {
+            var d = new Date(t);
+            d.setHours(0, 0, 0, 0);
+            return d.getTime();
+        };
+        var days = Math.round((startOfDay(now) - startOfDay(last)) / DAY);
+
+        if (diff < 30 * 60 * 1000) { icon = '🫧'; phrase = '欢迎回来'; }
+        else if (days === 0)      { icon = '☕'; phrase = '今天再见'; }
+        else if (days === 1)      { icon = '🌅'; phrase = '昨天来过'; }
+        else if (days <= 7)       { icon = '🌤'; phrase = days + ' 天前见过'; }
+        else if (days <= 30)      { icon = '📆'; phrase = days + ' 天前来过'; }
+        else if (days <= 180)     { icon = '✨'; phrase = '好久不见'; }
+        else                      { icon = '🌌'; phrase = '久违的你'; }
+    }
+
+    iconEl.textContent = icon;
+    textEl.textContent = phrase;
+
+    var reveal = function () {
+        var el = document.querySelector('[data-metric="personal"]');
+        if (el) el.classList.add('is-ready');
+    };
+    /* 字体加载完成后再淡入，避免 fallback → 目标字体切换引起的宽度 shift */
+    if (document.fonts && document.fonts.ready && document.fonts.ready.then) {
+        document.fonts.ready.then(reveal);
+        setTimeout(reveal, 1500); /* 超时兜底 */
+    } else {
+        reveal();
+    }
+
+    try { localStorage.setItem(KEY, String(now)); } catch (_) {}
+})();
+
+/* Back to Top：滚动超阈值显示，点击平滑回顶 */
+(function () {
+    var btn = document.querySelector('[data-back-to-top]');
+    if (!btn) return;
+
+    var threshold = 420;
+    var visible = false;
+    var ticking = false;
+
+    var update = function () {
+        var next = window.scrollY > threshold;
+        if (next !== visible) {
+            visible = next;
+            btn.classList.toggle('is-visible', visible);
+        }
+        ticking = false;
+    };
+
+    window.addEventListener('scroll', function () {
+        if (!ticking) {
+            requestAnimationFrame(update);
+            ticking = true;
+        }
+    }, { passive: true });
+    update();
+
+    btn.addEventListener('click', function () {
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
 })();
 
 /* 访客徽章：监听不蒜子数字注入 → 滚动动画 → 整组淡入；失败则隐藏 */
@@ -76,6 +173,11 @@
         requestAnimationFrame(step);
     };
 
+    var markReady = function (el) {
+        var badge = el.closest('.visitor-badge');
+        if (badge) badge.classList.add('is-ready');
+    };
+
     var consume = function (el) {
         if (el.getAttribute('data-ready')) return true;
         var raw = (el.textContent || '').trim();
@@ -83,11 +185,9 @@
         if (!raw || isNaN(num)) return false;
         el.setAttribute('data-ready', '1');
         countUp(el, num);
+        markReady(el);
         done++;
-        if (done >= values.length) {
-            clearTimeout(giveUp);
-            root.classList.add('is-ready');
-        }
+        if (done >= values.length) clearTimeout(giveUp);
         return true;
     };
 
@@ -99,8 +199,13 @@
         mo.observe(el, { childList: true, characterData: true, subtree: true });
     });
 
+    /* 超时兜底：把拿不到数据的徽章单个 is-failed → display:none，不留空位 */
     giveUp = setTimeout(function () {
-        if (!root.classList.contains('is-ready')) root.classList.add('is-failed');
+        Array.prototype.forEach.call(values, function (el) {
+            if (el.getAttribute('data-ready')) return;
+            var badge = el.closest('.visitor-badge');
+            if (badge) badge.classList.add('is-failed');
+        });
     }, 4500);
 })();
 
