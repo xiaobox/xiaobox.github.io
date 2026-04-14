@@ -11,7 +11,8 @@ tags:
   - MySQL
   - 数据结构
 ---
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2022-05-20-mysql-b-shu-ye-zi-jie-dian-shi-yong-dan-xiang-lian-biao-jin-/001-c4eba0b6.jpg)
+
+![](001-cca6a65b.jpg)
 
 先看一下上面这个图，大家是不是觉得没什么毛病？
 
@@ -23,12 +24,12 @@ tags:
 
 我们来看下正确的图：
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2022-05-20-mysql-b-shu-ye-zi-jie-dian-shi-yong-dan-xiang-lian-biao-jin-/002-7ec0ed29.jpg)
+![](002-d1ced06d.jpg)
 
 或者下面这个：
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2022-05-20-mysql-b-shu-ye-zi-jie-dian-shi-yong-dan-xiang-lian-biao-jin-/003-59f671b0.jpg)
+![](003-09674de7.jpg)
 
 希望能够帮到一直对B+tree 有误解的同学。
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2022-05-20-mysql-b-shu-ye-zi-jie-dian-shi-yong-dan-xiang-lian-biao-jin-/004-ba0bb5bc.jpg)
+![](004-ec6e6036.jpg)

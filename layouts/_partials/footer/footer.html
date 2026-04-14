@@ -6,7 +6,26 @@
         {{ end }}
         {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
     </section>
+
+    <section class="visitor-badges" aria-label="访客统计" data-visitor-badges>
+        <span class="visitor-badge" data-metric="uv">
+            <span class="visitor-badge__icon" aria-hidden="true">👣</span>
+            <span class="visitor-badge__body">
+                <span class="visitor-badge__value" id="busuanzi_value_site_uv" data-visitor-value>—</span>
+                <span class="visitor-badge__label">位旅人路过</span>
+            </span>
+        </span>
+        <span class="visitor-badge" data-metric="pv">
+            <span class="visitor-badge__icon" aria-hidden="true">📖</span>
+            <span class="visitor-badge__body">
+                <span class="visitor-badge__value" id="busuanzi_value_site_pv" data-visitor-value>—</span>
+                <span class="visitor-badge__label">次翻阅</span>
+            </span>
+        </span>
+    </section>
 </footer>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <script>
 /* 阅读进度条（仅文章详情页） */
@@ -28,6 +47,61 @@
     window.addEventListener('scroll', update, { passive: true });
     window.addEventListener('resize', update, { passive: true });
     update();
+})();
+
+/* 访客徽章：监听不蒜子数字注入 → 滚动动画 → 整组淡入；失败则隐藏 */
+(function () {
+    var root = document.querySelector('[data-visitor-badges]');
+    if (!root) return;
+    var values = root.querySelectorAll('[data-visitor-value]');
+    if (!values.length) return;
+
+    var done = 0;
+    var giveUp;
+
+    var format = function (n) {
+        return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    };
+
+    var countUp = function (el, target) {
+        var duration = 900;
+        var start = performance.now();
+        var step = function (now) {
+            var p = Math.min(1, (now - start) / duration);
+            var eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = format(Math.floor(target * eased));
+            if (p < 1) requestAnimationFrame(step);
+            else el.textContent = format(target);
+        };
+        requestAnimationFrame(step);
+    };
+
+    var consume = function (el) {
+        if (el.getAttribute('data-ready')) return true;
+        var raw = (el.textContent || '').trim();
+        var num = parseInt(raw.replace(/[^\d]/g, ''), 10);
+        if (!raw || isNaN(num)) return false;
+        el.setAttribute('data-ready', '1');
+        countUp(el, num);
+        done++;
+        if (done >= values.length) {
+            clearTimeout(giveUp);
+            root.classList.add('is-ready');
+        }
+        return true;
+    };
+
+    Array.prototype.forEach.call(values, function (el) {
+        if (consume(el)) return;
+        var mo = new MutationObserver(function () {
+            if (consume(el)) mo.disconnect();
+        });
+        mo.observe(el, { childList: true, characterData: true, subtree: true });
+    });
+
+    giveUp = setTimeout(function () {
+        if (!root.classList.contains('is-ready')) root.classList.add('is-failed');
+    }, 4500);
 })();
 
 /* 📦 盒子彩蛋：点击侧边栏 emoji 会喷出随机表情 */

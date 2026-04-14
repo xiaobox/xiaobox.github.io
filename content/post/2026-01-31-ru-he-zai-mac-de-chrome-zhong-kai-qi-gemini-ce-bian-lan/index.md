@@ -12,9 +12,10 @@ tags:
   - Chrome
   - Gemini
 ---
+
 昨天折腾了半天，厕所都没上，没搞定，今天一分钟搞定了，其实非常简单。
 
-![图片](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2026-01-31-ru-he-zai-mac-de-chrome-zhong-kai-qi-gemini-ce-bian-lan/001-c345b45d.png)
+![图片](001-a19868cf.png)
 
 前提条件什么的自不用说，主要是两步，我是 mac 系统，windows 的不知道。
 
@@ -22,13 +23,13 @@ tags:
 
 把语言设置一下，注意是在操作系统中设置chrome 的自定义语言
 
-![图片](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2026-01-31-ru-he-zai-mac-de-chrome-zhong-kai-qi-gemini-ce-bian-lan/002-097d5e60.png)
+![图片](002-f2b3a06f.png)
 
 ## 第二步
 
 打开终端，输入以后命令后回车
 
-⚡ 代码片段`open -n -a "Google Chrome" --args --variations-override-country=us`
+⚡ 代码片段`open -n -a "Google Chrome" --args --variations-override-country=us`
 
 也可以用这个项目设置一下 ：https://github.com/lcandy2/enable-chrome-ai
 

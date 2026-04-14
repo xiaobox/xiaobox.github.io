@@ -8,54 +8,67 @@ original_url: https://mp.weixin.qq.com/s/FFZcrzm8cZ56bHJFp2OTeA
 categories:
   - 杂谈
 ---
+
 早在22号新闻就说有位来自德国吕贝克大学的冠状病毒研究专家带着抑制病毒的药来华帮忙了。当时看到这条新闻感觉到一丝欣慰。
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/001-204c611c.jpg)
+  
 
-最近一位德国小伙也看到了他这位德国同胞的新闻，于是就试着去采访了一下老爷子，老爷子已经在中国了，来听听他说了什么吧，本文的最后有他们的采访视频。
+  
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/002-7a0d5fa3.jpg)
+![](001-a1e66af5.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/003-b9c7e86a.jpg)
+  
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/004-f5d3ab91.jpg)
+  
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/005-1b86786c.jpg)
+最近一位德国小伙也看到了他这位德国同胞的新闻，于是就试着去采访了一下老爷子，老爷子已经在中国了，来听听他说了什么吧，本文的最后有他们的采访视频。  
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/006-28ce62a7.jpg)
+  
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/007-0962f924.jpg)
+![](002-26fa0f04.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/008-2d44e9d5.jpg)
+![](003-4cc7504a.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/009-f0e325cd.jpg)
+![](004-e6368310.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/010-73917fcd.jpg)
+![](005-4a0589b2.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/011-1f9d0132.jpg)
+![](006-9d431cfc.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/012-9b3103c7.jpg)
+![](007-421713c4.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/013-dffdf9c8.jpg)
+![](008-90564d2a.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/014-95c028fe.jpg)
+![](009-f71f2e96.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/015-2fbf0328.jpg)
+![](010-de064432.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/016-31ebfc40.jpg)
+![](011-31873b78.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/017-bf88ad4a.jpg)
+![](012-dc3ce345.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/018-9a182f32.jpg)
+![](013-6f6f1b68.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/019-15d89b4c.jpg)
+![](014-586ec367.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/020-fe06e9dc.jpg)
+![](015-443557bd.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/021-fc586af5.jpg)
+![](016-9fbe54ed.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/022-0a32308a.jpg)
+![](017-813f933b.jpg)
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-01-26-ting-ting-xie-dai-bing-du-yi-zhi-ji-fu-hua-bang-zhu-wo-men-d/023-43650371.jpg)
+![](018-fcfee6d4.jpg)
+
+![](019-fdec20a7.jpg)
+
+![](020-fe66d8ec.jpg)
+
+![](021-0ec8c057.jpg)
+
+![](022-caa6250e.jpg)
+
+![](023-6c1c7bac.jpg)
+
+  
 
 **非常感觉这位同际友人对我们的帮忙，也希望他的箱子里正装着能够解决我们问题的答案！武汉加油！**

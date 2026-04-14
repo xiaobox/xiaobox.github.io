@@ -9,7 +9,10 @@ categories:
 tags:
   - Istio
 ---
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2021-06-25-xue-lei-jing-yan-shi-yong-skywalking-he-envoy-fang-wen-ri-zh/001-56fe76be.jpg)
+
+![](001-51060090.jpg)
+
+  
 
 ### 分享一个宝贵的经验
 
@@ -19,15 +22,17 @@ tags:
 
 经过华为和 skywalking 核心开发者的确认，版本对应关系如下：
 
--   `istio` 1.3     不支持生产 `skywalking` 使用
--   `istio` 1.7以上  `skywalking` 链路拓扑可以商用
--   `istio` 1.8     `skywalking` 日志商用
--   `istio` 1.11    `trace` 商用
+-   `istio` 1.3     不支持生产 `skywalking` 使用
+-   `istio` 1.7以上  `skywalking` 链路拓扑可以商用
+-   `istio` 1.8     `skywalking` 日志商用
+-   `istio` 1.11    `trace` 商用
 
 所以结论是得升级 `istio`，然后再去集成 `skywalking`。
 
 后续随着 `istio` 的升级将继续结合 `skywalking` 进行操作，并输出具有更多细节的文章。
 
-![Image](https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2021-06-25-xue-lei-jing-yan-shi-yong-skywalking-he-envoy-fang-wen-ri-zh/002-a2fb3490.gif)
+  
 
-关注公众号 获取更多精彩内容
+![](002-608d629a.gif)
+
+关注公众号 获取更多精彩内容
