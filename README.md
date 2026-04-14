@@ -1,8 +1,10 @@
 # xiaobox.github.io
 
-[何龙(小盒子)的技术博客](https://xiaobox.github.io),也是公众号「小盒子的技术分享」的镜像归档。
+[小盒子的技术博客](https://xiaobox.github.io),公众号「**小盒子的技术分享**」的镜像归档。
 
 主要写 AI Infra、推理平台、RAG / Agent,以及 Java、Redis、MySQL、云原生这些老本行的折腾笔记。
+
+附带一套**完整的公众号 → Hugo 博客同步工具链**(`scripts/`),如果你也想把自己的公众号搬出来,可以直接拿去改。
 
 ## 技术栈
 
