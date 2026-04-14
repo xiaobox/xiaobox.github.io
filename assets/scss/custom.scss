@@ -1,5 +1,6 @@
 /* =========================================================================
    小盒子的技术分享 — 自定义样式
+   注意：Stack 主题 html font-size = 62.5%，即 1rem = 10px
    ========================================================================= */
 
 /* ---------- 1. CJK 字体栈 ---------- */
@@ -17,65 +18,201 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/* ---------- 1.5 文章封面图统一视觉 ---------- */
-/* 列表卡片：统一为 16:9，object-fit cover 裁剪 */
-.article-list article .article-image {
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    background: linear-gradient(135deg, #4f46e5 0%, #14b8a6 100%);
+/* ---------- 2. 方案 B：列表页隐藏封面图 + 装饰 ---------- */
+/* 隐藏首页 / 分类 / 标签 / 归档 / 搜索的列表封面图
+   注意：article-list--tile 不在内，文章详情页底部的「相关文章」用的是 tile，要保留图 */
+.article-list .article-image,
+.article-list--compact .article-image,
+.search-result--list .article-image {
+    display: none !important;
+}
 
-    img {
-        width: 100%;
+/* 列表卡片补充装饰：左侧渐变色条 + 右上角 # 水印 */
+.article-list > article {
+    position: relative;
+    overflow: hidden;
+
+    /* 左侧渐变色条 */
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 1.6rem;
+        bottom: 1.6rem;
+        width: 3px;
+        border-radius: 0 3px 3px 0;
+        background: linear-gradient(180deg, #4f46e5 0%, #14b8a6 100%);
+        opacity: 0.85;
+        transition: width 0.25s ease, opacity 0.25s ease;
+    }
+
+    /* 右上角装饰 hash */
+    &::after {
+        content: "#";
+        position: absolute;
+        top: 0.8rem;
+        right: 1.6rem;
+        font-family: var(--code-font-family);
+        font-size: 4.8rem;
+        font-weight: 900;
+        color: var(--accent-color, #4f46e5);
+        opacity: 0.07;
+        pointer-events: none;
+        line-height: 1;
+        transition: opacity 0.3s ease, transform 0.4s ease;
+    }
+
+    &:hover {
+        &::before {
+            width: 5px;
+            opacity: 1;
+        }
+        &::after {
+            opacity: 0.14;
+            transform: rotate(-8deg);
+        }
+    }
+
+    /* 去图后卡片留白要更充裕 */
+    .article-details {
+        padding-left: 2.4rem;
+    }
+}
+
+/* 分类首页 / 归档页的 compact 列表同样加装饰 */
+.article-list--compact > article {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 1.2rem;
+        bottom: 1.2rem;
+        width: 3px;
+        border-radius: 0 3px 3px 0;
+        background: linear-gradient(180deg, #4f46e5 0%, #14b8a6 100%);
+        opacity: 0.85;
+        transition: width 0.25s ease, opacity 0.25s ease;
+    }
+
+    &:hover::before {
+        width: 5px;
+        opacity: 1;
+    }
+}
+
+/* ---------- 2.5 分类 tile（归档页顶部 / 分类列表页顶部） ---------- */
+.article-list--tile > article.is-term {
+    position: relative;
+    overflow: hidden;
+    border: none;
+
+    a {
+        display: block;
         height: 100%;
-        object-fit: cover;
-        object-position: center;
-        transition: transform 0.4s ease;
-        display: block;
+    }
+
+    .article-image { display: none; }
+
+    .article-details {
+        position: relative;
+        min-height: 14rem;
+        padding: 2rem 2rem 1.8rem;
+        background: linear-gradient(
+            135deg,
+            color-mix(in srgb, var(--tile-tint, #4f46e5) 82%, #fff) 0%,
+            color-mix(in srgb, var(--tile-tint, #14b8a6) 95%, #000) 100%
+        );
+        color: var(--tile-text, #fff) !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.6rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    &:hover .article-details {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .tile-hash {
+        position: absolute;
+        top: 0.2rem;
+        right: 1rem;
+        font-family: var(--code-font-family);
+        font-size: 8rem;
+        font-weight: 900;
+        line-height: 1;
+        color: var(--tile-text, #fff);
+        opacity: 0.15;
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.4s ease;
+    }
+
+    &:hover .tile-hash {
+        opacity: 0.28;
+        transform: rotate(-6deg) scale(1.05);
+    }
+
+    .article-title {
+        position: relative;
+        z-index: 1;
+        font-size: 2rem !important;
+        font-weight: 700;
+        line-height: 1.25;
+        color: inherit !important;
+        margin: 0;
+        letter-spacing: 0.01em;
+    }
+
+    .tile-count {
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        align-self: flex-start;
+        padding: 0.3rem 1rem;
+        border-radius: 999px;
+        font-size: 1.1rem;
+        font-family: var(--code-font-family);
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.25);
+        color: inherit;
+        backdrop-filter: blur(4px);
     }
 }
 
-.article-list article:hover .article-image img {
-    transform: scale(1.04);
+/* 归档页顶部的 section-title 也做点设计 */
+.template-archives > main > header > .section-title,
+.template-archives .archives-date {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid transparent;
+    background-image: linear-gradient(var(--body-background), var(--body-background)),
+        linear-gradient(90deg, #4f46e5, #14b8a6);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 
-/* 文章详情页头图：统一为 21:9 宽幅横幅 */
-.main-article .article-header .article-image {
-    aspect-ratio: 21 / 9;
-    overflow: hidden;
-    background: linear-gradient(135deg, #4f46e5 0%, #14b8a6 100%);
-
-    img {
-        width: 100% !important;
-        height: 100% !important;
-        max-height: none !important;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-    }
-}
-
-/* 小屏适配：详情页改用 16:9，避免过扁 */
-@media (max-width: 768px) {
-    .main-article .article-header .article-image {
-        aspect-ratio: 16 / 9;
-    }
-}
-
-/* ---------- 2. 文章底部公众号原文链接 ---------- */
+/* ---------- 3. 文章底部公众号原文链接 ---------- */
 .article-original-link {
-    margin-top: 1.2rem;
+    margin-top: 1.6rem;
 
     a {
         display: inline-flex;
         align-items: center;
-        gap: 0.5rem;
-        padding: 0.6rem 1rem;
+        gap: 0.8rem;
+        padding: 1rem 1.6rem;
         border-radius: 8px;
         background: var(--body-background);
         border: 1px solid var(--card-separator-color, rgba(0, 0, 0, 0.08));
         color: var(--body-text-color);
-        font-size: 0.92rem;
-        line-height: 1.4;
+        font-size: 1.4rem;
+        line-height: 1.5;
         text-decoration: none;
         transition: background 0.2s ease, border-color 0.2s ease,
             transform 0.15s ease;
@@ -95,36 +232,33 @@ body {
     }
 }
 
-/* ---------- 3.5 精选文章 widget ---------- */
+/* ---------- 4. 精选文章 widget ---------- */
 .widget.featured {
     .widget-featured--list {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-        margin-top: 0.5rem;
+        @include card-style;
+        margin-top: 1rem;
     }
 
     .featured-item {
         display: flex;
-        align-items: flex-start;
-        gap: 0.85rem;
-        padding: 0.75rem 0.65rem;
-        border-radius: 8px;
-        color: var(--card-text-color-main, var(--body-text-color));
+        align-items: center;
+        gap: 1.4rem;
+        padding: 1.6rem 2rem;
+        color: var(--card-text-color-main);
         text-decoration: none;
-        transition: background 0.2s ease, transform 0.15s ease;
+        transition: background 0.2s ease;
+
+        &:not(:last-of-type) {
+            border-bottom: 1.5px solid var(--card-separator-color);
+        }
 
         &:hover {
-            background: var(--body-background, rgba(79, 70, 229, 0.06));
-            transform: translateX(2px);
-
             .featured-index {
                 color: #fff;
-                background: linear-gradient(135deg, #4f46e5, #14b8a6);
                 -webkit-text-fill-color: #fff;
+                background: linear-gradient(135deg, #4f46e5, #14b8a6);
                 border-color: transparent;
             }
-
             .featured-title {
                 color: var(--accent-color, #4f46e5);
             }
@@ -136,33 +270,31 @@ body {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 30px;
-        height: 30px;
+        width: 3.6rem;
+        height: 3.6rem;
         border-radius: 6px;
-        border: 1px solid var(--card-separator-color, rgba(0, 0, 0, 0.1));
+        border: 1.5px solid var(--card-separator-color);
         font-family: var(--code-font-family);
-        font-size: 0.78rem;
+        font-size: 1.2rem;
         font-weight: 700;
         letter-spacing: 0.02em;
-        background: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
         color: var(--accent-color, #4f46e5);
-        transition: all 0.2s ease;
+        transition: all 0.25s ease;
     }
 
     .featured-body {
         display: flex;
         flex-direction: column;
-        gap: 0.2rem;
+        gap: 0.4rem;
         min-width: 0;
         flex: 1;
     }
 
     .featured-title {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        font-weight: 600;
+        color: var(--card-text-color-main);
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -172,24 +304,24 @@ body {
     }
 
     .featured-date {
-        font-size: 0.72rem;
+        font-size: 1.1rem;
         font-family: var(--code-font-family);
-        color: var(--card-text-color-tertiary, rgba(0, 0, 0, 0.5));
-        letter-spacing: 0.02em;
+        color: var(--card-text-color-tertiary);
+        letter-spacing: 0.03em;
     }
 }
 
-/* ---------- 4. 文章分享按钮 ---------- */
+/* ---------- 5. 文章分享按钮 ---------- */
 .article-share {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    gap: 1rem;
+    margin-top: 1.6rem;
+    padding-top: 1.6rem;
     border-top: 1px dashed var(--card-separator-color, rgba(0, 0, 0, 0.08));
 
     .share-label {
-        font-size: 0.88rem;
+        font-size: 1.4rem;
         color: var(--body-text-color);
         opacity: 0.7;
     }
@@ -198,8 +330,8 @@ body {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 36px;
-        height: 36px;
+        width: 3.6rem;
+        height: 3.6rem;
         padding: 0;
         border-radius: 50%;
         background: transparent;
