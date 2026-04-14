@@ -176,16 +176,28 @@ menu:
       weight: -90
       params:
         icon: user
+    - identifier: projects
+      name: 项目
+      url: /projects/
+      weight: -85
+      params:
+        icon: package
     - identifier: archives
       name: 归档
       url: /archives/
       weight: -80
       params:
         icon: archives
+    - identifier: sponsor
+      name: 赞赏
+      url: /sponsor/
+      weight: -75
+      params:
+        icon: heart
     - identifier: search
       name: 搜索
       url: /search/
-      weight: -70
+      weight: -95
       params:
         icon: search
   social:
