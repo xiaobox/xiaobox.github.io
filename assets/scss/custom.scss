@@ -27,6 +27,12 @@ body {
     display: none !important;
 }
 
+/* 单篇文章页的头图也隐藏：公众号封面图比例多变，且带 banner 文字，
+   作为博客 hero 区域会被裁得很难看。og:image 仍然保留用于社交分享 */
+.main-article .article-header .article-image {
+    display: none !important;
+}
+
 /* 列表整体：去掉卡片阴影外壳，回归极简文字排版 */
 .article-list,
 .article-list--compact {
