@@ -1,0 +1,27 @@
+{{- /* llms-full.txt — full content dump for LLM ingestion */ -}}
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description }}
+
+作者：小盒子 | 站点：{{ .Site.BaseURL }} | 共 {{ len (where .Site.RegularPages "Section" "post") }} 篇
+
+================================================================================
+
+{{ range (where .Site.RegularPages "Section" "post").ByDate.Reverse }}
+# {{ .Title }}
+
+URL: {{ .Permalink }}
+Published: {{ .Date.Format "2006-01-02" }}
+Updated: {{ .Lastmod.Format "2006-01-02" }}
+{{- with .Params.tags }}
+Tags: {{ delimit . ", " }}
+{{- end }}
+{{- with .Params.categories }}
+Categories: {{ delimit . ", " }}
+{{- end }}
+
+{{ .RawContent }}
+
+--------------------------------------------------------------------------------
+
+{{ end }}

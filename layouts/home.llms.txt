@@ -1,0 +1,18 @@
+{{- /* llms.txt — concise site index for LLMs (llmstxt.org standard) */ -}}
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description }}
+
+## 关于
+
+- 作者：小盒子
+- 站点：{{ .Site.BaseURL }}
+- GitHub：https://github.com/xiaobox
+- 语言：简体中文
+- 主题：AI Infra、推理平台、RAG、Agent、大模型、Java、Redis、MySQL、云原生、Kubernetes
+
+## 文章索引
+
+{{ range (where .Site.RegularPages "Section" "post").ByDate.Reverse -}}
+- [{{ .Title }}]({{ .Permalink }}) — {{ .Date.Format "2006-01-02" }}{{ with .Description }} — {{ . | plainify }}{{ else }}{{ with .Summary }} — {{ . | plainify | truncate 160 }}{{ end }}{{ end }}
+{{ end }}
