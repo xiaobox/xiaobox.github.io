@@ -1,0 +1,21 @@
+{{- $context := .Context -}}
+{{- $title := default "精选文章" .Params.title -}}
+{{- $paths := default (slice) .Params.pages -}}
+{{- if $paths -}}
+<section class="widget featured">
+    <div class="widget-icon">
+        {{ partial "helper/icon" "hash" }}
+    </div>
+    <h2 class="widget-title section-title">{{ $title }}</h2>
+    <div class="widget-featured--list">
+        {{- range $paths -}}
+            {{- with $context.Site.GetPage . -}}
+                <a href="{{ .RelPermalink }}" class="featured-item" title="{{ .Title }}">
+                    <span class="featured-dot">›</span>
+                    <span class="featured-title">{{ .Title }}</span>
+                </a>
+            {{- end -}}
+        {{- end -}}
+    </div>
+</section>
+{{- end -}}

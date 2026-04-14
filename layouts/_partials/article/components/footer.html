@@ -1,0 +1,63 @@
+<footer class="article-meta article-footer">
+    {{ partial "article/components/tags" . }}
+
+    {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) }}
+    <section class="article-copyright inline-meta">
+        {{ partial "helper/icon" "copyright" }}
+        <span>{{ default .Site.Params.article.license.default .Params.license | markdownify }}</span>
+    </section>
+    {{ end }}
+
+    {{- if ne .Lastmod .Date -}}
+    <section class="article-lastmod inline-meta">
+        {{ partial "helper/icon" "clock" }}
+        <span>
+            {{ T "article.lastUpdatedOn" }} {{ .Lastmod | time.Format .Site.Params.dateFormat.lastUpdated }}
+        </span>
+    </section>
+    {{- end -}}
+
+    {{- with .Params.original_url -}}
+    <section class="article-original-link">
+        <a href="{{ . }}" target="_blank" rel="noopener nofollow">
+            {{ partial "helper/icon" "brand-wechat" }}
+            <span>本文首发于微信公众号「小盒子的技术分享」，点此查看原文 →</span>
+        </a>
+    </section>
+    {{- end -}}
+
+    <section class="article-share">
+        <span class="share-label">分享：</span>
+        <a class="share-btn share-twitter"
+           href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}"
+           target="_blank" rel="noopener" aria-label="Share to X/Twitter" title="分享到 X">
+            {{ partial "helper/icon" "brand-twitter" }}
+        </a>
+        <button class="share-btn share-copy" type="button"
+                data-url="{{ .Permalink }}" aria-label="复制链接" title="复制链接">
+            {{ partial "helper/icon" "link" }}
+        </button>
+    </section>
+</footer>
+
+<script>
+(function () {
+    document.querySelectorAll('.share-copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var url = btn.dataset.url;
+            var done = function () {
+                btn.classList.add('copied');
+                setTimeout(function () { btn.classList.remove('copied'); }, 1500);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(url).then(done);
+            } else {
+                var ta = document.createElement('textarea');
+                ta.value = url; document.body.appendChild(ta);
+                ta.select(); document.execCommand('copy');
+                document.body.removeChild(ta); done();
+            }
+        });
+    });
+})();
+</script>

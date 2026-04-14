@@ -1,0 +1,143 @@
+/* =========================================================================
+   小盒子的技术分享 — 自定义样式
+   ========================================================================= */
+
+/* ---------- 1. CJK 字体栈 ---------- */
+:root {
+    --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei",
+        "Hiragino Sans GB", "Source Han Sans SC", Roboto, "Helvetica Neue",
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --code-font-family: "JetBrains Mono", "Fira Code", "SF Mono", Menlo,
+        Consolas, "Cascadia Code", "PingFang SC", monospace;
+}
+
+body {
+    font-feature-settings: "palt" 1;
+    text-rendering: optimizeLegibility;
+}
+
+/* ---------- 2. 文章底部公众号原文链接 ---------- */
+.article-original-link {
+    margin-top: 1.2rem;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.6rem 1rem;
+        border-radius: 8px;
+        background: var(--body-background);
+        border: 1px solid var(--card-separator-color, rgba(0, 0, 0, 0.08));
+        color: var(--body-text-color);
+        font-size: 0.92rem;
+        line-height: 1.4;
+        text-decoration: none;
+        transition: background 0.2s ease, border-color 0.2s ease,
+            transform 0.15s ease;
+
+        &:hover {
+            background: var(--card-background-selected, rgba(0, 0, 0, 0.04));
+            border-color: #07c160;
+            transform: translateY(-1px);
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            color: #07c160;
+        }
+    }
+}
+
+/* ---------- 3.5 精选文章 widget ---------- */
+.widget.featured {
+    .widget-featured--list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .featured-item {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+        padding: 0.4rem 0.1rem;
+        color: var(--body-text-color);
+        text-decoration: none;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        border-bottom: 1px dashed transparent;
+        transition: color 0.15s ease, border-color 0.2s ease,
+            padding 0.15s ease;
+
+        &:hover {
+            color: var(--accent-color, #4f46e5);
+            border-bottom-color: var(--card-separator-color, rgba(0, 0, 0, 0.1));
+            padding-left: 0.3rem;
+        }
+    }
+
+    .featured-dot {
+        flex-shrink: 0;
+        color: var(--accent-color, #4f46e5);
+        font-weight: 700;
+    }
+
+    .featured-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
+
+/* ---------- 4. 文章分享按钮 ---------- */
+.article-share {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--card-separator-color, rgba(0, 0, 0, 0.08));
+
+    .share-label {
+        font-size: 0.88rem;
+        color: var(--body-text-color);
+        opacity: 0.7;
+    }
+
+    .share-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        border-radius: 50%;
+        background: transparent;
+        border: 1px solid var(--card-separator-color, rgba(0, 0, 0, 0.08));
+        color: var(--body-text-color);
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease,
+            transform 0.15s ease;
+
+        &:hover {
+            background: var(--card-background-selected, rgba(0, 0, 0, 0.05));
+            transform: translateY(-1px);
+        }
+
+        &.copied {
+            background: #22c55e;
+            border-color: #22c55e;
+            color: #fff;
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

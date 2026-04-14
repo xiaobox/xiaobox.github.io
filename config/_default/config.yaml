@@ -30,7 +30,7 @@ params:
     - post
   featuredImageField: image
   rssFullContent: true
-  favicon:
+  favicon: img/avatar.svg
 
   footer:
     since: 2020
@@ -43,7 +43,7 @@ params:
   sidebar:
     emoji: "📦"
     subtitle: Java 老兵的 AI 折腾笔记
-    avatar: ""
+    avatar: img/avatar.png
 
   article:
     math: false
@@ -74,6 +74,15 @@ params:
   widgets:
     homepage:
       - type: search
+      - type: featured
+        params:
+          title: 精选文章
+          pages:
+            - /post/2025-03-28-ai-da-mo-xing-shi-dai-de-yan-jin-zhi-l-cong-ji-chu-mo-xing-r
+            - /post/2025-03-11-rag-de-wu-da-fan-shi
+            - /post/2025-02-09-deepseek-r1-cong-ling-kai-shi-dao-chao-yue-ren-lei
+            - /post/2025-07-22-ai-quan-de-xin-chong-context-engineering
+            - /post/2024-03-15-java-he-jvm-zi-jdk-8-zhi-21-de-te-xing-gai-lan
       - type: archives
         params:
           limit: 8
@@ -186,5 +195,5 @@ markup:
     guessSyntax: true
     lineNoStart: 1
     lineNos: true
-    lineNumbersInTable: true
+    lineNumbersInTable: false
     tabWidth: 4
