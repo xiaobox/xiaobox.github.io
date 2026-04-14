@@ -9,6 +9,27 @@
 </footer>
 
 <script>
+/* 阅读进度条（仅文章详情页） */
+(function () {
+    var article = document.querySelector('.main-article .article-content');
+    if (!article) return;
+    var bar = document.createElement('div');
+    bar.className = 'reading-progress';
+    document.body.appendChild(bar);
+    var update = function () {
+        var rect = article.getBoundingClientRect();
+        var top = window.scrollY + rect.top;
+        var height = rect.height;
+        if (height <= 0) return;
+        var scrolled = (window.scrollY + window.innerHeight * 0.5 - top) / height;
+        var progress = Math.max(0, Math.min(1, scrolled));
+        bar.style.transform = 'scaleX(' + progress + ')';
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+    update();
+})();
+
 /* 📦 盒子彩蛋：点击侧边栏 emoji 会喷出随机表情 */
 (function () {
     var emoji = document.querySelector('.site-avatar .emoji');
