@@ -26,6 +26,18 @@
     </section>
     {{- end -}}
 
+    <section class="article-like" data-key="like:{{ .RelPermalink }}">
+        <button class="like-btn" type="button" aria-label="点赞">
+            <svg class="like-heart" viewBox="0 0 24 24" width="28" height="28"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            <span class="like-count">0</span>
+        </button>
+        <span class="like-label">如果这篇对你有用，点个赞吧</span>
+    </section>
+
     <section class="article-share" data-title="{{ .Title }}">
         <span class="share-label">分享：</span>
         <a class="share-btn share-twitter"
@@ -42,6 +54,37 @@
 
 <script>
 (function () {
+    document.querySelectorAll('.article-like').forEach(function (box) {
+        var key = box.dataset.key;
+        var btn = box.querySelector('.like-btn');
+        var countEl = box.querySelector('.like-count');
+        var read = function () {
+            try { return JSON.parse(localStorage.getItem(key)) || { n: 0, mine: false }; }
+            catch (e) { return { n: 0, mine: false }; }
+        };
+        var state = read();
+        countEl.textContent = state.n;
+        if (state.mine) btn.classList.add('liked');
+
+        btn.addEventListener('click', function () {
+            var s = read();
+            if (s.mine) {
+                s.n = Math.max(0, s.n - 1);
+                s.mine = false;
+                btn.classList.remove('liked');
+            } else {
+                s.n += 1;
+                s.mine = true;
+                btn.classList.add('liked');
+                btn.classList.remove('bounce');
+                void btn.offsetWidth;
+                btn.classList.add('bounce');
+            }
+            localStorage.setItem(key, JSON.stringify(s));
+            countEl.textContent = s.n;
+        });
+    });
+
     document.querySelectorAll('.article-share').forEach(function (box) {
         var url = window.location.href.split('#')[0];
         var title = box.dataset.title || document.title;

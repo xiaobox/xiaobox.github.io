@@ -1,0 +1,92 @@
+{{ define "body-class" }}template-search{{ end }}
+{{ define "head" }}
+    {{- with .OutputFormats.Get "json" -}}
+        <link rel="preload" href="{{ .RelPermalink }}" as="fetch" crossorigin="anonymous">
+    {{- end -}}
+{{ end }}
+{{ define "main" }}
+<form action="{{ .RelPermalink }}" class="search-form"{{ with .OutputFormats.Get "json" -}} data-json="{{ .RelPermalink }}"{{- end }}>
+    <p>
+        <label>{{ T "search.title" }}</label>
+        <input name="keyword" placeholder="{{ T `search.placeholder` }}" autocomplete="off" />
+    </p>
+
+    <button title="{{ T `search.title` }}">
+        {{ partial "helper/icon" "search" }}
+    </button>
+</form>
+
+<div class="search-result hidden">
+    <h3 class="search-result--title section-title"></h3>
+    <div class="search-result--list article-list--compact"></div>
+</div>
+
+<section class="search-suggestions">
+    {{- $cats := site.Taxonomies.categories.ByCount -}}
+    {{- if $cats -}}
+    <div class="suggestion-block">
+        <h3 class="section-title">热门分类</h3>
+        <div class="suggestion-cats">
+            {{ range first 6 $cats }}
+                {{- $termPage := site.GetPage (printf "/categories/%s" .Name) -}}
+                {{- $display := .Name -}}
+                {{- $href := printf "/categories/%s/" .Name -}}
+                {{- if $termPage -}}
+                    {{- $display = $termPage.Title -}}
+                    {{- $href = $termPage.RelPermalink -}}
+                {{- end -}}
+                {{- $color := partial "helper/color-from-str" $display -}}
+                <a class="sugg-cat"
+                   href="{{ $href }}"
+                   style="--tint: {{ $color.BackgroundColor | safeCSS }}; --tint-text: {{ $color.TextColor | safeCSS }};">
+                    <span class="sugg-cat-hash">#</span>
+                    <span class="sugg-cat-name">{{ $display }}</span>
+                    <span class="sugg-cat-count">{{ .Count }} 篇</span>
+                </a>
+            {{ end }}
+        </div>
+    </div>
+    {{- end -}}
+
+    {{- $tags := site.Taxonomies.tags.ByCount -}}
+    {{- if $tags -}}
+    <div class="suggestion-block">
+        <h3 class="section-title">高频标签</h3>
+        <div class="suggestion-tags">
+            {{ range first 30 $tags }}
+                {{- $tagPage := site.GetPage (printf "/tags/%s" .Name) -}}
+                {{- $tagDisplay := .Name -}}
+                {{- $tagHref := printf "/tags/%s/" .Name -}}
+                {{- if $tagPage -}}
+                    {{- $tagDisplay = $tagPage.Title -}}
+                    {{- $tagHref = $tagPage.RelPermalink -}}
+                {{- end -}}
+                <a class="sugg-tag" href="{{ $tagHref }}">
+                    {{ $tagDisplay }}
+                    <small>{{ .Count }}</small>
+                </a>
+            {{ end }}
+        </div>
+    </div>
+    {{- end -}}
+
+    <div class="suggestion-block">
+        <h3 class="section-title">搜索技巧</h3>
+        <ul class="suggestion-tips">
+            <li>直接输入关键词，支持标题与正文全文匹配</li>
+            <li>中英文混合 OK，例如 <kbd>RAG</kbd> <kbd>Java 21</kbd> <kbd>Claude Code</kbd></li>
+            <li>没找到想要的？试试换一个同义词，或直接点上方分类浏览</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    window.searchResultTitleTemplate = "{{ T `search.resultTitle` }}"
+</script>
+
+{{- $opts := dict "minify" hugo.IsProduction "JSXFactory" "createElement" -}}
+{{- $searchScript := resources.Get "ts/search.tsx" | js.Build $opts -}}
+<script type="text/javascript" src="{{ $searchScript.RelPermalink }}" defer></script>
+
+{{ partialCached "footer/footer" . }}
+{{ end }}

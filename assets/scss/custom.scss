@@ -18,7 +18,7 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/* ---------- 2. 方案 B：列表页隐藏封面图 + 装饰 ---------- */
+/* ---------- 2. 方案 B：列表页隐藏封面图 + mxb.dev 风极简卡片 ---------- */
 /* 隐藏首页 / 分类 / 标签 / 归档 / 搜索的列表封面图
    注意：article-list--tile 不在内，文章详情页底部的「相关文章」用的是 tile，要保留图 */
 .article-list .article-image,
@@ -27,80 +27,118 @@ body {
     display: none !important;
 }
 
-/* 列表卡片补充装饰：左侧渐变色条 + 右上角 # 水印 */
-.article-list > article {
-    position: relative;
-    overflow: hidden;
+/* 列表整体：去掉卡片阴影外壳，回归极简文字排版 */
+.article-list,
+.article-list--compact {
+    gap: 0.8rem;
+}
 
-    /* 左侧渐变色条 */
+.article-list > article,
+.article-list--compact > article {
+    position: relative;
+    background: var(--card-background);
+    border-radius: var(--card-border-radius, 10px);
+    box-shadow: none;
+    border: 1px solid transparent;
+    transition: border-color 0.25s ease, background 0.25s ease;
+
+    /* 左侧极细渐变色条作为唯一装饰 */
     &::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 1.6rem;
-        bottom: 1.6rem;
-        width: 3px;
-        border-radius: 0 3px 3px 0;
+        top: 2.4rem;
+        bottom: 2.4rem;
+        width: 2px;
+        border-radius: 0 2px 2px 0;
         background: linear-gradient(180deg, #4f46e5 0%, #14b8a6 100%);
-        opacity: 0.85;
-        transition: width 0.25s ease, opacity 0.25s ease;
-    }
-
-    /* 右上角装饰 hash */
-    &::after {
-        content: "#";
-        position: absolute;
-        top: 0.8rem;
-        right: 1.6rem;
-        font-family: var(--code-font-family);
-        font-size: 4.8rem;
-        font-weight: 900;
-        color: var(--accent-color, #4f46e5);
-        opacity: 0.07;
-        pointer-events: none;
-        line-height: 1;
-        transition: opacity 0.3s ease, transform 0.4s ease;
+        opacity: 0;
+        transition: opacity 0.3s ease, width 0.3s ease;
     }
 
     &:hover {
+        border-color: var(--card-separator-color, rgba(0, 0, 0, 0.08));
+
         &::before {
-            width: 5px;
             opacity: 1;
+            width: 3px;
         }
-        &::after {
-            opacity: 0.14;
-            transform: rotate(-8deg);
+
+        .article-title a {
+            color: var(--accent-color, #4f46e5);
         }
     }
 
-    /* 去图后卡片留白要更充裕 */
     .article-details {
-        padding-left: 2.4rem;
+        padding: 2.4rem 2.8rem !important;
+    }
+
+    /* mxb.dev 风：大号厚重标题 */
+    .article-title {
+        font-size: 2.2rem !important;
+        font-weight: 700 !important;
+        line-height: 1.3 !important;
+        letter-spacing: -0.005em;
+        margin: 0 !important;
+
+        a {
+            color: var(--card-text-color-main);
+            transition: color 0.2s ease;
+        }
+    }
+
+    .article-subtitle {
+        font-size: 1.4rem !important;
+        color: var(--card-text-color-secondary) !important;
+        font-weight: 400 !important;
+        line-height: 1.6 !important;
+        margin-top: 0.8rem !important;
+    }
+
+    /* metadata：中点分隔符、小字灰色 */
+    .article-meta {
+        display: flex !important;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.8rem !important;
+        margin-top: 1.2rem !important;
+        font-size: 1.25rem !important;
+        color: var(--card-text-color-tertiary);
+
+        .inline-meta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            svg {
+                width: 13px !important;
+                height: 13px !important;
+                opacity: 0.5;
+            }
+        }
+
+        .inline-meta + .inline-meta::before {
+            content: "·";
+            display: inline-block;
+            margin-right: 0.8rem;
+            opacity: 0.4;
+            font-weight: 700;
+        }
+
+        .article-tags svg { display: none; }
+    }
+
+    /* 分类徽章保留但更克制 */
+    .article-category {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
     }
 }
 
-/* 分类首页 / 归档页的 compact 列表同样加装饰 */
-.article-list--compact > article {
-    position: relative;
-    overflow: hidden;
-
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 1.2rem;
-        bottom: 1.2rem;
-        width: 3px;
-        border-radius: 0 3px 3px 0;
-        background: linear-gradient(180deg, #4f46e5 0%, #14b8a6 100%);
-        opacity: 0.85;
-        transition: width 0.25s ease, opacity 0.25s ease;
-    }
-
-    &:hover::before {
-        width: 5px;
-        opacity: 1;
-    }
+/* 去掉分页组件上方多余的空隙 */
+.article-list--compact {
+    display: flex;
+    flex-direction: column;
 }
 
 /* ---------- 2.5 分类 tile（归档页顶部 / 分类列表页顶部） ---------- */
@@ -309,6 +347,232 @@ body {
         color: var(--card-text-color-tertiary);
         letter-spacing: 0.03em;
     }
+}
+
+/* ---------- 4.5 点赞按钮（localStorage 本地版） ---------- */
+.article-like {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 3.2rem 0 2rem;
+
+    .like-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 1.2rem;
+        padding: 1.4rem 2.8rem;
+        border-radius: 999px;
+        background: var(--card-background);
+        border: 2px solid var(--card-separator-color, rgba(0, 0, 0, 0.08));
+        color: var(--body-text-color);
+        font-size: 1.6rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: color 0.2s ease, border-color 0.2s ease,
+            background 0.25s ease, transform 0.15s ease,
+            box-shadow 0.25s ease;
+
+        &:hover {
+            border-color: #ef4444;
+            color: #ef4444;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(239, 68, 68, 0.18);
+        }
+
+        &.liked {
+            background: linear-gradient(135deg, #fb7185, #ef4444);
+            border-color: transparent;
+            color: #fff;
+
+            .like-heart {
+                fill: #fff;
+            }
+        }
+
+        &.bounce .like-heart {
+            animation: heart-bounce 0.6s ease;
+        }
+
+        .like-heart {
+            transition: fill 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .like-count {
+            font-family: var(--code-font-family);
+            font-size: 1.5rem;
+            letter-spacing: 0.02em;
+            min-width: 1.8rem;
+            text-align: left;
+        }
+    }
+
+    .like-label {
+        font-size: 1.2rem;
+        color: var(--card-text-color-tertiary);
+        letter-spacing: 0.02em;
+    }
+}
+
+@keyframes heart-bounce {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.35); }
+    50% { transform: scale(0.88); }
+    75% { transform: scale(1.15); }
+}
+
+/* ---------- 4.6 搜索页空状态建议 ---------- */
+.search-suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-top: 3.2rem;
+
+    .section-title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1.6rem;
+        letter-spacing: 0.01em;
+    }
+
+    .suggestion-cats {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        gap: 1.2rem;
+    }
+
+    .sugg-cat {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 10rem;
+        padding: 1.6rem 1.8rem;
+        border-radius: 12px;
+        overflow: hidden;
+        text-decoration: none;
+        background: linear-gradient(
+            135deg,
+            color-mix(in srgb, var(--tint, #4f46e5) 82%, #fff) 0%,
+            color-mix(in srgb, var(--tint, #14b8a6) 95%, #000) 100%
+        );
+        color: var(--tint-text, #fff);
+        transition: transform 0.25s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+        }
+
+        .sugg-cat-hash {
+            position: absolute;
+            top: 0.2rem;
+            right: 1rem;
+            font-family: var(--code-font-family);
+            font-size: 6rem;
+            font-weight: 900;
+            line-height: 1;
+            color: inherit;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .sugg-cat-name {
+            position: relative;
+            z-index: 1;
+            font-size: 1.7rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .sugg-cat-count {
+            position: relative;
+            z-index: 1;
+            align-self: flex-start;
+            padding: 0.3rem 0.9rem;
+            border-radius: 999px;
+            font-size: 1.05rem;
+            font-family: var(--code-font-family);
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.28);
+            backdrop-filter: blur(4px);
+        }
+    }
+
+    .suggestion-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .sugg-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.6rem 1.2rem;
+        border-radius: 999px;
+        background: var(--card-background);
+        border: 1px solid var(--card-separator-color, rgba(0, 0, 0, 0.08));
+        color: var(--card-text-color-main);
+        font-size: 1.3rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        small {
+            font-size: 1rem;
+            font-family: var(--code-font-family);
+            color: var(--card-text-color-tertiary);
+        }
+
+        &:hover {
+            border-color: var(--accent-color, #4f46e5);
+            color: var(--accent-color, #4f46e5);
+            transform: translateY(-1px);
+        }
+    }
+
+    .suggestion-tips {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        font-size: 1.4rem;
+        line-height: 1.8;
+        color: var(--card-text-color-secondary);
+
+        li {
+            padding-left: 1.8rem;
+            position: relative;
+
+            &::before {
+                content: "›";
+                position: absolute;
+                left: 0;
+                color: var(--accent-color, #4f46e5);
+                font-weight: 700;
+            }
+        }
+
+        kbd {
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            margin: 0 0.2rem;
+            border-radius: 4px;
+            background: var(--card-background);
+            border: 1px solid var(--card-separator-color, rgba(0, 0, 0, 0.1));
+            font-family: var(--code-font-family);
+            font-size: 1.2rem;
+            color: var(--card-text-color-main);
+        }
+    }
+}
+
+/* 搜索有结果时隐藏空状态建议 */
+.search-result:not(.hidden) ~ .search-suggestions {
+    display: none;
 }
 
 /* ---------- 5. 文章分享按钮 ---------- */
