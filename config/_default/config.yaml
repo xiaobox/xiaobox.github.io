@@ -5,6 +5,7 @@ hasCJKLanguage: true
 title: 小盒子的技术分享
 theme: hugo-theme-stack
 enableEmoji: true
+googleAnalytics: G-HSK1NED2WX
 
 # 站点描述(用于首页 meta description / og:description / RSS)
 description: 小盒子的技术分享 - AI Infra、推理平台、RAG、Agent、Java、Redis、MySQL、云原生等技术折腾笔记。公众号「小盒子的技术分享」镜像归档。
