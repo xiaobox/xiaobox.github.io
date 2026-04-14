@@ -5,7 +5,13 @@ hasCJKLanguage: true
 title: 小盒子的技术分享
 theme: hugo-theme-stack
 enableEmoji: true
+enableRobotsTXT: true
 googleAnalytics: G-HSK1NED2WX
+
+privacy:
+  googleAnalytics:
+    respectDoNotTrack: true
+    anonymizeIP: true
 
 # 站点描述(用于首页 meta description / og:description / RSS)
 description: 小盒子的技术分享 - AI Infra、推理平台、RAG、Agent、Java、Redis、MySQL、云原生等技术折腾笔记。公众号「小盒子的技术分享」镜像归档。
@@ -32,6 +38,7 @@ params:
   featuredImageField: image
   rssFullContent: true
   favicon: img/favicon.png
+  SortBy: lastmod
 
   footer:
     since: 2019
@@ -47,9 +54,12 @@ params:
     avatar: img/avatar.png
 
   article:
+    headingAnchor: true
     math: false
     toc: true
     readingTime: true
+    list:
+      showTags: true
     license:
       enabled: true
       default: 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)
