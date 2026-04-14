@@ -1,0 +1,147 @@
+baseurl: https://xiaobox.github.io/
+languageCode: zh-cn
+defaultContentLanguage: zh-cn
+hasCJKLanguage: true
+title: 小盒子的技术分享
+theme: hugo-theme-stack
+
+services:
+  rss:
+    limit: 10
+
+pagination:
+  pagerSize: 10
+
+permalinks:
+  post: /p/:slug/
+  page: /:slug/
+
+params:
+  mainSections:
+    - post
+  featuredImageField: image
+  rssFullContent: true
+  favicon:
+
+  footer:
+    since: 2020
+    customText: "由 Hugo + Stack 驱动"
+
+  dateFormat:
+    published: 2006-01-02
+    lastUpdated: 2006-01-02 15:04 MST
+
+  sidebar:
+    emoji: "📦"
+    subtitle: Java 老兵的 AI 折腾笔记
+    avatar: ""
+
+  article:
+    math: false
+    toc: true
+    readingTime: true
+    license:
+      enabled: true
+      default: 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)
+
+  comments:
+    enabled: false
+
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 8
+      - type: categories
+        params:
+          limit: 15
+      - type: tag-cloud
+        params:
+          limit: 50
+    page:
+      - type: toc
+
+  opengraph:
+    twitter:
+      card: summary_large_image
+
+  defaultImage:
+    opengraph:
+      enabled: false
+      local: false
+
+  colorScheme:
+    toggle: true
+    default: auto
+
+  imageProcessing:
+    cover:
+      enabled: false
+    content:
+      enabled: false
+
+menu:
+  main:
+    - identifier: home
+      name: 首页
+      url: /
+      weight: -100
+      params:
+        icon: home
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: -90
+      params:
+        icon: user
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: -80
+      params:
+        icon: archives
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: -70
+      params:
+        icon: search
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/xiaobox
+      params:
+        icon: brand-github
+    - identifier: email
+      name: Email
+      url: mailto:helongisno1@gmail.com
+      params:
+        icon: mail
+
+related:
+  includeNewer: true
+  threshold: 60
+  toLower: false
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 200
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+    startLevel: 2
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    tabWidth: 4

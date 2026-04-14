@@ -1,0 +1,14 @@
+{
+  "name": "wx-importer",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1030.0",
+    "cheerio": "^1.0.0",
+    "mime-types": "^3.0.2",
+    "pinyin-pro": "^3.28.1",
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2"
+  }
+}
