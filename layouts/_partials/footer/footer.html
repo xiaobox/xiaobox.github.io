@@ -7,3 +7,49 @@
         {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
     </section>
 </footer>
+
+<script>
+/* 📦 盒子彩蛋：点击侧边栏 emoji 会喷出随机表情 */
+(function () {
+    var emoji = document.querySelector('.site-avatar .emoji');
+    if (!emoji) return;
+
+    var jets = ['🚀','🐛','💻','☕','🔥','🎉','⚡','🔮','🦀','🎯','✨','🌱','📚','🧠','🍜','🎧','🪄'];
+    var clicks = 0;
+
+    emoji.style.cursor = 'pointer';
+    emoji.setAttribute('title', '点我一下试试');
+    emoji.setAttribute('role', 'button');
+    emoji.setAttribute('tabindex', '0');
+
+    var trigger = function () {
+        clicks++;
+        emoji.classList.remove('wiggle');
+        void emoji.offsetWidth;
+        emoji.classList.add('wiggle');
+
+        var jet = document.createElement('span');
+        jet.className = 'emoji-jet';
+        jet.textContent = jets[Math.floor(Math.random() * jets.length)];
+        var rect = emoji.getBoundingClientRect();
+        jet.style.left = (rect.left + rect.width / 2) + 'px';
+        jet.style.top = (rect.top + rect.height / 2) + 'px';
+        jet.style.setProperty('--drift', (Math.random() * 60 - 30) + 'px');
+        jet.style.setProperty('--rot', (Math.random() * 60 - 30) + 'deg');
+        document.body.appendChild(jet);
+        setTimeout(function () { jet.remove(); }, 1400);
+
+        if (clicks === 10) {
+            console.log(
+                '%c📦 你找到了盒子彩蛋！\n谢谢你点了我 10 次 :)',
+                'color: #4f46e5; font-size: 14px; font-weight: bold; padding: 4px 0;'
+            );
+        }
+    };
+
+    emoji.addEventListener('click', trigger);
+    emoji.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); trigger(); }
+    });
+})();
+</script>

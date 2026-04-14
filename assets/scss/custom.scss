@@ -18,6 +18,60 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+/* ---------- 1.5 📦 盒子彩蛋（点击侧边栏 emoji 喷射表情） ---------- */
+.site-avatar .emoji {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    user-select: none;
+
+    &:hover {
+        transform: rotate(-10deg) scale(1.12);
+    }
+
+    &.wiggle {
+        animation: emoji-wiggle 0.55s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+    }
+}
+
+@keyframes emoji-wiggle {
+    0%, 100% { transform: rotate(0) scale(1); }
+    15%      { transform: rotate(-18deg) scale(1.12); }
+    30%      { transform: rotate(14deg) scale(1.18); }
+    45%      { transform: rotate(-12deg) scale(1.1); }
+    60%      { transform: rotate(8deg) scale(1.05); }
+    80%      { transform: rotate(-4deg) scale(1.02); }
+}
+
+.emoji-jet {
+    position: fixed;
+    font-size: 2.8rem;
+    line-height: 1;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    will-change: transform, opacity;
+    animation: emoji-jet-fly 1.4s cubic-bezier(0.15, 0.65, 0.4, 1) forwards;
+}
+
+@keyframes emoji-jet-fly {
+    0% {
+        transform: translate(-50%, -50%) scale(0.4) rotate(0);
+        opacity: 0;
+    }
+    15% {
+        transform: translate(-50%, -60%) scale(1.3) rotate(calc(var(--rot, 0deg) * 0.3));
+        opacity: 1;
+    }
+    100% {
+        transform:
+            translate(calc(-50% + var(--drift, 0px)), -160px)
+            scale(0.85)
+            rotate(var(--rot, 0deg));
+        opacity: 0;
+    }
+}
+
 /* ---------- 2. 方案 B：列表页隐藏封面图 + mxb.dev 风极简卡片 ---------- */
 /* 隐藏首页 / 分类 / 标签 / 归档 / 搜索的列表封面图
    注意：article-list--tile 不在内，文章详情页底部的「相关文章」用的是 tile，要保留图 */
