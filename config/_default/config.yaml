@@ -54,7 +54,22 @@ params:
       default: 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)
 
   comments:
-    enabled: false
+    enabled: true
+    provider: giscus
+    giscus:
+      repo: xiaobox/xiaobox.github.io
+      repoID: R_kgDOSCIYtg
+      category: Announcements
+      categoryID: DIC_kwDOSCIYts4C6zwn
+      mapping: pathname
+      strict: 0
+      lightTheme: light
+      darkTheme: dark_dimmed
+      reactionsEnabled: 1
+      emitMetadata: 0
+      inputPosition: bottom
+      lang: zh-CN
+      loading: lazy
 
   widgets:
     homepage:
