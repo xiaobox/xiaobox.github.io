@@ -26,8 +26,8 @@
 | `delete-empty-posts.mjs` | 删除空文章,同步清理 R2 对应图片 |
 | `upload-images-r2.mjs` | 并发上传所有图片到 Cloudflare R2 |
 | `rewrite-md-to-r2.mjs` | 把 markdown 里的本地图片引用改写为 R2 公开 URL |
-
-完整搬迁过程见博客文章:[把公众号搬来这里的 N 个理由](https://xiaobox.github.io/p/2026-04-14-why-this-blog/)。
+| `fix-md-formatting.mjs` | 全局 markdown 后处理(代码块 lang 启发式、行尾清理、过度转义还原等) |
+| `auto-tag.mjs` | 基于打分制的 categories + tags 自动分类 |
 
 ## 本地开发
 

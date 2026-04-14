@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# 屏蔽搜索结果页和 RSS 之外的低价值索引
+Disallow: /search/
+
+Sitemap: https://xiaobox.github.io/sitemap.xml

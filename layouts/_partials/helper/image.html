@@ -1,5 +1,8 @@
 /// Override of themes/hugo-theme-stack/layouts/_partials/helper/image.html
-/// Reason: 远程图片(R2/CDN) URL 直接透传, 不调用 GetRemote, 避免构建慢和 timeout
+/// Fixes:
+///   1. 远程图片(R2/CDN) URL 直接透传, 不调用 GetRemote, 避免构建慢/timeout
+///   2. 同时输出 Permalink(大写) 和 permalink(小写) 兼容主题各处不同的访问方式
+///      (主题 base.html 用 .permalink 小写, 但 image.html 原版只输出 .Permalink 大写)
 
 {{ $result := dict }}
 
@@ -9,6 +12,7 @@
     {{ $resource := dict
         "Resource" nil
         "Permalink" $permalink
+        "permalink" $permalink
         "Height" nil
         "Width" nil
     }}
@@ -24,6 +28,7 @@
         {{ $result = dict
             "Resource" nil
             "Permalink" $permalink
+            "permalink" $permalink
             "Height" nil
             "Width" nil
         }}
@@ -43,6 +48,7 @@
             {{ $result = dict
                 "Resource" $resource
                 "Permalink" $permalink
+                "permalink" $permalink
                 "Height" $resource.Height
                 "Width" $resource.Width
             }}
@@ -50,6 +56,7 @@
             {{ $result = dict
                 "Resource" $resource
                 "Permalink" $permalink
+                "permalink" $permalink
                 "Height" nil
                 "Width" nil
             }}
