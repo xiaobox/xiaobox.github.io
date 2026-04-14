@@ -42,7 +42,7 @@ params:
 
   sidebar:
     emoji: "📦"
-    subtitle: Java 老兵的 AI 折腾笔记
+    subtitle: ""
     avatar: img/avatar.png
 
   article:

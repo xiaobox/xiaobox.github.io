@@ -26,15 +26,15 @@
     </section>
     {{- end -}}
 
-    <section class="article-share">
+    <section class="article-share" data-title="{{ .Title }}">
         <span class="share-label">分享：</span>
         <a class="share-btn share-twitter"
-           href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}"
-           target="_blank" rel="noopener" aria-label="Share to X/Twitter" title="分享到 X">
+           href="#" target="_blank" rel="noopener"
+           aria-label="Share to X/Twitter" title="分享到 X">
             {{ partial "helper/icon" "brand-twitter" }}
         </a>
         <button class="share-btn share-copy" type="button"
-                data-url="{{ .Permalink }}" aria-label="复制链接" title="复制链接">
+                aria-label="复制链接" title="复制链接">
             {{ partial "helper/icon" "link" }}
         </button>
     </section>
@@ -42,22 +42,31 @@
 
 <script>
 (function () {
-    document.querySelectorAll('.share-copy').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            var url = btn.dataset.url;
-            var done = function () {
-                btn.classList.add('copied');
-                setTimeout(function () { btn.classList.remove('copied'); }, 1500);
-            };
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(url).then(done);
-            } else {
-                var ta = document.createElement('textarea');
-                ta.value = url; document.body.appendChild(ta);
-                ta.select(); document.execCommand('copy');
-                document.body.removeChild(ta); done();
-            }
-        });
+    document.querySelectorAll('.article-share').forEach(function (box) {
+        var url = window.location.href.split('#')[0];
+        var title = box.dataset.title || document.title;
+        var tw = box.querySelector('.share-twitter');
+        if (tw) {
+            tw.href = 'https://twitter.com/intent/tweet?text=' +
+                encodeURIComponent(title) + '&url=' + encodeURIComponent(url);
+        }
+        var copy = box.querySelector('.share-copy');
+        if (copy) {
+            copy.addEventListener('click', function () {
+                var done = function () {
+                    copy.classList.add('copied');
+                    setTimeout(function () { copy.classList.remove('copied'); }, 1500);
+                };
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(url).then(done);
+                } else {
+                    var ta = document.createElement('textarea');
+                    ta.value = url; document.body.appendChild(ta);
+                    ta.select(); document.execCommand('copy');
+                    document.body.removeChild(ta); done();
+                }
+            });
+        }
     });
 })();
 </script>

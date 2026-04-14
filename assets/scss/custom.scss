@@ -17,6 +17,50 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+/* ---------- 1.5 文章封面图统一视觉 ---------- */
+/* 列表卡片：统一为 16:9，object-fit cover 裁剪 */
+.article-list article .article-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: linear-gradient(135deg, #4f46e5 0%, #14b8a6 100%);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.4s ease;
+        display: block;
+    }
+}
+
+.article-list article:hover .article-image img {
+    transform: scale(1.04);
+}
+
+/* 文章详情页头图：统一为 21:9 宽幅横幅 */
+.main-article .article-header .article-image {
+    aspect-ratio: 21 / 9;
+    overflow: hidden;
+    background: linear-gradient(135deg, #4f46e5 0%, #14b8a6 100%);
+
+    img {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: none !important;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+}
+
+/* 小屏适配：详情页改用 16:9，避免过扁 */
+@media (max-width: 768px) {
+    .main-article .article-header .article-image {
+        aspect-ratio: 16 / 9;
+    }
+}
+
 /* ---------- 2. 文章底部公众号原文链接 ---------- */
 .article-original-link {
     margin-top: 1.2rem;
@@ -56,41 +100,82 @@ body {
     .widget-featured--list {
         display: flex;
         flex-direction: column;
-        gap: 0.4rem;
+        gap: 0.25rem;
+        margin-top: 0.5rem;
     }
 
     .featured-item {
         display: flex;
-        align-items: baseline;
-        gap: 0.5rem;
-        padding: 0.4rem 0.1rem;
-        color: var(--body-text-color);
+        align-items: flex-start;
+        gap: 0.85rem;
+        padding: 0.75rem 0.65rem;
+        border-radius: 8px;
+        color: var(--card-text-color-main, var(--body-text-color));
         text-decoration: none;
-        font-size: 0.9rem;
-        line-height: 1.4;
-        border-bottom: 1px dashed transparent;
-        transition: color 0.15s ease, border-color 0.2s ease,
-            padding 0.15s ease;
+        transition: background 0.2s ease, transform 0.15s ease;
 
         &:hover {
-            color: var(--accent-color, #4f46e5);
-            border-bottom-color: var(--card-separator-color, rgba(0, 0, 0, 0.1));
-            padding-left: 0.3rem;
+            background: var(--body-background, rgba(79, 70, 229, 0.06));
+            transform: translateX(2px);
+
+            .featured-index {
+                color: #fff;
+                background: linear-gradient(135deg, #4f46e5, #14b8a6);
+                -webkit-text-fill-color: #fff;
+                border-color: transparent;
+            }
+
+            .featured-title {
+                color: var(--accent-color, #4f46e5);
+            }
         }
     }
 
-    .featured-dot {
+    .featured-index {
         flex-shrink: 0;
-        color: var(--accent-color, #4f46e5);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        border: 1px solid var(--card-separator-color, rgba(0, 0, 0, 0.1));
+        font-family: var(--code-font-family);
+        font-size: 0.78rem;
         font-weight: 700;
+        letter-spacing: 0.02em;
+        background: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: var(--accent-color, #4f46e5);
+        transition: all 0.2s ease;
+    }
+
+    .featured-body {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        min-width: 0;
+        flex: 1;
     }
 
     .featured-title {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        font-weight: 500;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
+        transition: color 0.2s ease;
+    }
+
+    .featured-date {
+        font-size: 0.72rem;
+        font-family: var(--code-font-family);
+        color: var(--card-text-color-tertiary, rgba(0, 0, 0, 0.5));
+        letter-spacing: 0.02em;
     }
 }
 
