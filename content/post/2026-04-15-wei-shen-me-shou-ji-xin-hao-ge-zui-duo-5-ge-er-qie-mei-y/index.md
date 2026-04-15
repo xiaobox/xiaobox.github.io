@@ -2,7 +2,7 @@
 title: "为什么手机信号格最多 5 格，而且每一格都是骗你的"
 slug: 2026-04-15-wei-shen-me-shou-ji-xin-hao-ge-zui-duo-5-ge-er-qie-mei-yi-ge-dou-shi-pian-ni-de
 description: "上周末我跟朋友在一家小餐厅吃饭。他刚换了华为的新旗舰，掏出来拍菜。拍着拍着抬头跟我说，你看这信号，满格。我低头瞄了一眼自己的 iPhone，2 格。"
-date: 2026-04-15T23:00:00.000Z
+date: 2026-04-15T13:31:00.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2026-04-15-wei-shen-me-shou-ji-xin-hao-ge-zui-duo-5-ge-er-qie-mei-y/cover.jpg
 original_url: 
 categories:
