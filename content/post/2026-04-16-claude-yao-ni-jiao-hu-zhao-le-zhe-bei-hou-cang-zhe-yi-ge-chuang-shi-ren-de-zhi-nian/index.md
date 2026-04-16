@@ -2,7 +2,7 @@
 title: "Claude 要你交护照了，这背后藏着一个创始人的执念"
 slug: 2026-04-16-claude-yao-ni-jiao-hu-zhao-le-zhe-bei-hou-cang-zhe-yi-ge-chuang-shi-ren-de-zhi-nian
 description: ""
-date: 2026-04-16T09:00:00.000Z
+date: 2026-04-16T02:00:00.000Z
 image: 
 original_url: 
 categories:
