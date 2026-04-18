@@ -8,6 +8,7 @@ original_url:
 categories:
   - 行业与思考
 tags:
+  - 行业与思考
   - 程序员
   - 工伤
   - 劳动法
