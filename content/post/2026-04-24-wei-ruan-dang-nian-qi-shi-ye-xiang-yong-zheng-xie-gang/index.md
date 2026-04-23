@@ -2,7 +2,7 @@
 title: "微软当年其实也想用正斜杠"
 slug: 2026-04-24-wei-ruan-dang-nian-qi-shi-ye-xiang-yong-zheng-xie-gang
 description: ""
-date: 2026-04-24T11:54:32.000Z
+date: 2026-04-23T17:05:00.000Z
 image: 
 original_url: https://mp.weixin.qq.com/s/HXgssuVg8P80OFbGB-W1Bw
 categories:
