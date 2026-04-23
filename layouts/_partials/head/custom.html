@@ -1,3 +1,12 @@
+{{/* SEO: 作者标签 + 搜索引擎站点所有权验证 */}}
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+{{ with .Site.Params.seo }}
+{{ with .googleSiteVerification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+{{ with .bingSiteVerification }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
+{{ with .baiduSiteVerification }}<meta name="baidu-site-verification" content="{{ . }}">{{ end }}
+{{ with .yandexVerification }}<meta name="yandex-verification" content="{{ . }}">{{ end }}
+{{ end }}
+
 {{/* JSON-LD structured data for GEO / AI search engines */}}
 {{- $author := dict
     "@type" "Person"

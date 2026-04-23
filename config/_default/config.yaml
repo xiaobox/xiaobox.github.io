@@ -34,7 +34,7 @@ outputs:
     - llmsfull
 
 # 站点描述(用于首页 meta description / og:description / RSS)
-description: 小盒子的技术分享 - AI Infra、推理平台、RAG、Agent、Java、Redis、MySQL、云原生等技术折腾笔记。公众号「小盒子的技术分享」镜像归档。
+description: 小盒子(Leo)的技术博客 —— AI Infra、推理平台、RAG、Agent、Claude Code、Cursor、Java、JVM、Redis、MySQL、云原生、Kubernetes 等技术折腾笔记与行业杂谈。
 
 sitemap:
   changefreq: weekly
@@ -124,7 +124,15 @@ params:
     page:
       - type: toc
 
-  description: 小盒子的技术分享 - AI Infra、推理平台、RAG、Agent、Java、Redis、MySQL、云原生等技术折腾笔记
+  description: 小盒子(Leo)的技术博客 —— AI Infra、推理平台、RAG、Agent、Claude Code、Cursor、Java、JVM、Redis、MySQL、云原生、Kubernetes 等技术折腾笔记与行业杂谈
+  author: 小盒子
+
+  # SEO: 搜索引擎站点所有权验证 token（拿到后填入，留空则不渲染）
+  seo:
+    googleSiteVerification: ""
+    bingSiteVerification: ""
+    baiduSiteVerification: ""
+    yandexVerification: ""
   keywords:
     - AI Infra
     - 推理平台
