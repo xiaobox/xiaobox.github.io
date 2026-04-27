@@ -2,7 +2,7 @@
 title: "Kimi 不是不强，是不好被记住了"
 slug: 2026-04-27-kimi-bu-shi-bu-qiang-shi-bu-hao-bei-ji-zhu-le
 description: ""
-date: 2026-04-27T11:00:00.000Z
+date: 2026-04-27T10:10:00.000Z
 image: 
 original_url: 
 categories:

@@ -2,7 +2,7 @@
 title: "AI 这么热，苹果却选了一个硬件人"
 slug: 2026-04-27-ai-zhe-me-re-ping-guo-que-xuan-le-yi-ge-ying-jian-ren
 description: ""
-date: 2026-04-27T12:00:00.000Z
+date: 2026-04-27T10:20:00.000Z
 image: 
 original_url: 
 categories:
