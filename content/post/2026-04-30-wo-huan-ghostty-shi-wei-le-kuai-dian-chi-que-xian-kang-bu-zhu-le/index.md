@@ -7,9 +7,6 @@ image:
 original_url: 
 categories:
   - 行业与思考
-tags:
-  - 行业与思考
-  - 杂谈
 ---
 我以前换终端，基本只看两件事。
 

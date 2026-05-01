@@ -7,9 +7,6 @@ image:
 original_url: 
 categories:
   - 行业与思考
-tags:
-  - 行业与思考
-  - 杂谈
 ---
 前两天我把一个项目打成 zip 发给合作方，他用 Windows。
 

@@ -7,9 +7,6 @@ image:
 original_url: https://mp.weixin.qq.com/s/HXgssuVg8P80OFbGB-W1Bw
 categories:
   - 行业与思考
-tags:
-  - 行业与思考
-  - 杂谈
 ---
 
 换过电脑的人应该都注意过一件事。

@@ -9,11 +9,6 @@ categories:
   - 工具与效率
 tags:
   - Git
-  - Vim
-  - Chrome
-  - Claude
-  - Cursor
-  - 网络
 ---
 Postman 我用了好几年了。
 

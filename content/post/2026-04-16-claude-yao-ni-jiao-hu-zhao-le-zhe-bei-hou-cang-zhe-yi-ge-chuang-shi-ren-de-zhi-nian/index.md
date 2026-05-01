@@ -9,8 +9,6 @@ categories:
   - 行业与思考
 tags:
   - Claude
-  - Anthropic
-  - AI
 ---
 昨天很多人被一条消息炸到了，Claude 上线了身份验证，要你交护照照片加实时自拍。
 

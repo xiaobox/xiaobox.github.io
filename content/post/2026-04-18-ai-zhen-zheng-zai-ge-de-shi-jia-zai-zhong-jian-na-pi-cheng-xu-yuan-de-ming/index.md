@@ -8,12 +8,9 @@ original_url:
 categories:
   - 行业与思考
 tags:
-  - AI
   - LLM
   - Agent
-  - 程序员
   - 职场
-  - 行业与思考
 ---
 
 前段时间一个老朋友发了条微信过来，说他们组上周优化掉了 4 个人。

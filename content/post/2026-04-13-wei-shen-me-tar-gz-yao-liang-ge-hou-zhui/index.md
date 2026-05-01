@@ -8,8 +8,7 @@ original_url: https://mp.weixin.qq.com/s/AR1DsJNwUX28Kw_NLKmcmw
 categories:
   - 系统底层
 tags:
-  - Nginx
-  - 算法
+  - Linux
 ---
 前两天我在重新编译一版 nginx。
 

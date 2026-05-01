@@ -8,9 +8,7 @@ original_url: https://mp.weixin.qq.com/s/QyDHvaa9TM142BwNYwE4ug
 categories:
   - 行业与思考
 tags:
-  - AI
   - LLM
-  - 行业与思考
   - 职场
 ---
 

@@ -7,9 +7,6 @@ image:
 original_url: 
 categories:
   - 行业与思考
-tags:
-  - 行业与思考
-  - 杂谈
 ---
 
 ![](https://xiaobox-public-images.oss-cn-beijing.aliyuncs.com/images/ChatGPT%20Image%202026%E5%B9%B44%E6%9C%8826%E6%97%A5%2013_27_36.png)

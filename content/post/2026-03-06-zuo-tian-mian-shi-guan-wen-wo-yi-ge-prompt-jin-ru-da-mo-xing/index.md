@@ -8,7 +8,6 @@ original_url: https://mp.weixin.qq.com/s/kqlIWt_7izyV0HJC_LZEjg
 categories:
   - AI
 tags:
-  - vLLM
   - LLM
   - ChatGPT
   - Prompt

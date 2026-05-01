@@ -7,9 +7,6 @@ image:
 original_url: 
 categories:
   - 行业与思考
-tags:
-  - 行业与思考
-  - 杂谈
 ---
 前两天我新建一个仓库，顺手把之前项目的 `.gitignore` 文件拷贝进来。然后我接了杯水，回来盯着 vscode 上的这个空项目以及这个 `.gitignore` 文件喝了口水，看着这个文件我突然想到，这文件名挺奇怪的。
 

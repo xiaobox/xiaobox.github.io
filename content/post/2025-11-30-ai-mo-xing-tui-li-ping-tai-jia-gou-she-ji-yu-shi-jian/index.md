@@ -9,7 +9,6 @@ categories:
   - AI
 tags:
   - Kubernetes
-  - KServe
   - LLM
   - 算法
   - 架构

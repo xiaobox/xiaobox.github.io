@@ -7,9 +7,6 @@ image:
 original_url: 
 categories:
   - 行业与思考
-tags:
-  - 行业与思考
-  - 杂谈
 ---
 
 2001 年，一个宾夕法尼亚大学机械工程毕业生加入苹果。
