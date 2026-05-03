@@ -6,7 +6,12 @@ date: 2026-05-03T05:00:00.000Z
 image: 
 original_url: 
 categories:
-  - 
+  - 行业与思考
+tags:
+  - OpenAI
+  - ChatGPT
+  - Sam Altman
+  - Elon Musk
 ---
 
 最近这几天你刷新闻，可能看到马斯克又上法庭了。
