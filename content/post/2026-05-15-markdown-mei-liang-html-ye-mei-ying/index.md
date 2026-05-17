@@ -104,7 +104,7 @@ Uber 这周也出了新闻。CTO 报告说 Uber 2026 年的 AI 工具预算在 4
 
 HTML 作为 source。把 HTML 文件直接放进 git 仓库,作为长期维护的 source of truth。这种场景下 HTML 输给 Markdown 在 4 条上。
 
-版本控制。git diff 一个 Markdown 文件,一行就是一行内容,改哪段标题、哪条列表项一目了然。HTML 不一样,一段内容容易跨几行嵌套标签,diff 给你的上下文经常是 </div>、<section> 这种孤立标签,看不出改的是哪一块。更糟的是 HTML 容易被 Prettier 重排,被 AI 重新生成时属性顺序、缩进、自闭合写法每次都不同,一整个文件 diff 全是红绿,但没一行真改了什么。
+版本控制。git diff 一个 Markdown 文件,一行就是一行内容,改哪段标题、哪条列表项一目了然。HTML 不一样,一段内容容易跨几行嵌套标签,diff 给你的上下文经常是 `</div>、<section>` 这种孤立标签,看不出改的是哪一块。更糟的是 HTML 容易被 Prettier 重排,被 AI 重新生成时属性顺序、缩进、自闭合写法每次都不同,一整个文件 diff 全是红绿,但没一行真改了什么。
 
 AI 二次读取。AI 输出常常被另一个 AI 读取。你让 Claude 生成一份 spec,下一轮让 Codex 按这份 spec 改代码。HTML 多花的 30-50% token,每次二次消费都在缴这个税。
 
