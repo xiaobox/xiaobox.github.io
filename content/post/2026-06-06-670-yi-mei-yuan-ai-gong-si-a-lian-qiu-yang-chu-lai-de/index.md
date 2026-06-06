@@ -2,7 +2,7 @@
 title: "670 亿美元 AI 公司，阿联酋养出来的"
 slug: 2026-06-06-670-yi-mei-yuan-ai-gong-si-a-lian-qiu-yang-chu-lai-de
 description: ""
-date: 2026-06-06T05:00:00.000Z
+date: 2026-06-06T02:00:00.000Z
 image: 
 original_url: 
 categories:

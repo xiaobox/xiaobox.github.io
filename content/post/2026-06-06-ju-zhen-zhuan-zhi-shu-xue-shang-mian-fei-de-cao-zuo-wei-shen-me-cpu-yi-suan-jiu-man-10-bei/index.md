@@ -2,7 +2,7 @@
 title: "矩阵转置：数学上免费的操作，为什么 CPU 一算就慢 10 倍？"
 slug: 2026-06-06-ju-zhen-zhuan-zhi-shu-xue-shang-mian-fei-de-cao-zuo-wei-shen-me-cpu-yi-suan-jiu-man-10-bei
 description: ""
-date: 2026-06-06T05:00:00.000Z
+date: 2026-06-06T02:00:00.000Z
 image: 
 original_url: 
 categories:

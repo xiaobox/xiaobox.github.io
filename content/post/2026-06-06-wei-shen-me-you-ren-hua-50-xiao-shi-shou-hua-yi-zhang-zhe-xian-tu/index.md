@@ -2,7 +2,7 @@
 title: "为什么有人花 50 小时手画一张折线图，比 AI 三秒出的更值钱"
 slug: 2026-06-06-wei-shen-me-you-ren-hua-50-xiao-shi-shou-hua-yi-zhang-zhe-xian-tu
 description: ""
-date: 2026-06-06T05:00:00.000Z
+date: 2026-06-06T02:00:00.000Z
 image: 
 original_url: 
 categories:
