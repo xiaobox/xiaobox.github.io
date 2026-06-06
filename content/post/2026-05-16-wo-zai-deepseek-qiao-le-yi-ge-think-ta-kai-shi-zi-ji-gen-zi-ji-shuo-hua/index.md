@@ -15,6 +15,8 @@ tags:
   - 安全
 ---
 
+## 一个奇怪的现象
+
 今天看到一个挺有意思的现象。
 
 有人在 DeepSeek 的输入框里敲了几个字符，`<think>`，然后什么问题都没问，直接按回车。
@@ -28,6 +30,8 @@ DeepSeek 给它吐回来一段八竿子打不着的内容。有时候是数学�
 看到这种截图，很多人第一句就是，完了，模型疯了。再往下一想，又会怀疑是不是漏了训练数据。
 
 其实都不是。
+
+## Special Token Injection
 
 这类问题有个名字，Special Token Injection。
 
@@ -45,7 +49,7 @@ DeepSeek 给它吐回来一段八竿子打不着的内容。有时候是数学�
 
 平时我们敲一个「你好」，DeepSeek 看到的并不是这两个字。它看到的是一段拼好的模板，类似 `<｜begin▁of▁sentence｜><｜User｜>你好<｜Assistant｜>`，然后从最后那个 `<｜Assistant｜>` 之后开始往下说。
 
-坑就在这里。
+## 坑在哪里
 
 如果用户直接把 `<think>` 打进输入框，而模板层又没把它当普通文字关起来，tokenizer 就可能把它认成真的控制 token。
 
@@ -58,6 +62,8 @@ DeepSeek 给它吐回来一段八竿子打不着的内容。有时候是数学�
 到这里就能看出来了，麻烦不在模型脑子里，在模板那层字符串胶水里。它没把控制 token 当普通文字锁住。
 
 ![](https://xiaobox-public-images.oss-cn-beijing.aliyuncs.com/images/ChatGPT%20Image%202026%E5%B9%B45%E6%9C%8817%E6%97%A5%2011_24_29.png)
+
+## 不只是 DeepSeek 的问题
 
 这也不是 DeepSeek 一家的毛病。很多模型都有自己的对话格式，早期 ChatML 有 `<|im_start|>`，Claude 旧格式也用过 `Human` / `Assistant` 这种分隔。
 
