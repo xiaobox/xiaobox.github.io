@@ -7,3 +7,4 @@ node_modules/
 scripts/.env.r2
 scripts/data/
 .claude/
+.gstack/
