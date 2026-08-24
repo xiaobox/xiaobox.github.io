@@ -32,6 +32,11 @@ outputs:
     - RSS
     - llms
     - llmsfull
+  # 每篇文章 / 单页额外产出干净的 Markdown 副本（/p/<slug>/index.md），
+  # 供 AI 抓取器直接读取，无需解析 HTML。markdown 为 Hugo 内置输出格式。
+  page:
+    - HTML
+    - markdown
 
 # 站点描述(用于首页 meta description / og:description / RSS)
 description: 小盒子(Leo)的技术博客 —— AI Infra、推理平台、RAG、Agent、Claude Code、Cursor、Java、JVM、Redis、MySQL、云原生、Kubernetes 等技术折腾笔记与行业杂谈。

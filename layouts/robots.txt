@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+# 屏蔽站内搜索结果页（低价值、易重复）
+Disallow: /search/
 
 # AI crawlers — explicitly welcomed
 User-agent: GPTBot

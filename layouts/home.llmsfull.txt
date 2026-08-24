@@ -1,23 +1,33 @@
-{{- /* llms-full.txt — full content dump for LLM ingestion */ -}}
+{{- /* llms-full.txt — 全文导出，供 LLM 直接摄取。 */ -}}
+{{- $posts := (where .Site.RegularPages "Section" "post").ByDate.Reverse -}}
 # {{ .Site.Title }}
 
 > {{ .Site.Params.description }}
 
-作者：小盒子 | 站点：{{ .Site.BaseURL }} | 共 {{ len (where .Site.RegularPages "Section" "post") }} 篇
+作者：小盒子（Leo） | 站点：{{ .Site.BaseURL }} | 关于：{{ "about/" | absURL }} | 共 {{ len $posts }} 篇
 
 ================================================================================
 
-{{ range (where .Site.RegularPages "Section" "post").ByDate.Reverse }}
+{{ range $posts }}
 # {{ .Title }}
 
 URL: {{ .Permalink }}
+{{ with .OutputFormats.Get "markdown" }}Markdown: {{ .Permalink }}
+{{ end -}}
+Canonical: {{ .Permalink }}
 Published: {{ .Date.Format "2006-01-02" }}
 Updated: {{ .Lastmod.Format "2006-01-02" }}
+{{- with .Params.categories }}
+Categories: {{ delimit . ", " }}
+{{- end }}
 {{- with .Params.tags }}
 Tags: {{ delimit . ", " }}
 {{- end }}
-{{- with .Params.categories }}
-Categories: {{ delimit . ", " }}
+{{- with .Params.original_url }}
+原文（微信公众号）: {{ . }}
+{{- end }}
+{{- with .Description }}
+Description: {{ . | plainify | replaceRE "\\s+" " " | strings.TrimSpace }}
 {{- end }}
 
 {{ .RawContent }}

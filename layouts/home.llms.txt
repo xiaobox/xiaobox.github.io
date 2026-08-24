@@ -1,18 +1,50 @@
-{{- /* llms.txt — concise site index for LLMs (llmstxt.org standard) */ -}}
+{{- /* llms.txt — 面向 LLM 的站点索引（llmstxt.org 约定）。纯文本，供 AI 抓取器速览。 */ -}}
+{{- $posts := (where .Site.RegularPages "Section" "post").ByDate.Reverse -}}
 # {{ .Site.Title }}
 
 > {{ .Site.Params.description }}
 
 ## 关于
 
-- 作者：小盒子
+- 作者：小盒子（Leo）
 - 站点：{{ .Site.BaseURL }}
+- 关于页：{{ "about/" | absURL }}
 - GitHub：https://github.com/xiaobox
 - 语言：简体中文
-- 主题：AI Infra、推理平台、RAG、Agent、大模型、Java、Redis、MySQL、云原生、Kubernetes
+- 主题：AI Infra、推理平台、RAG、Agent、大模型、Claude Code、Cursor、Java、JVM、Redis、MySQL、云原生、Kubernetes
+- 共 {{ len $posts }} 篇文章；每篇文章均提供干净的 Markdown 版本（在文章 URL 后加 `index.md`）。
 
-## 文章索引
 
-{{ range (where .Site.RegularPages "Section" "post").ByDate.Reverse -}}
-- [{{ .Title }}]({{ .Permalink }}) — {{ .Date.Format "2006-01-02" }}{{ with .Description }} — {{ . | plainify }}{{ else }}{{ with .Summary }} — {{ . | plainify | truncate 160 }}{{ end }}{{ end }}
-{{ end }}
+{{- /* 一行摘要辅助函数：优先 description，回退 summary，压成单行 */ -}}
+{{- define "_line" -}}
+{{- $d := .Description -}}
+{{- if not $d -}}{{- $d = .Summary -}}{{- end -}}
+{{- $d = $d | plainify | replaceRE "\\s+" " " | strings.TrimSpace | truncate 160 -}}
+{{- $md := .OutputFormats.Get "markdown" -}}
+- [{{ .Title }}]({{ .Permalink }}) · {{ .Date.Format "2006-01-02" }}{{ with $md }} · [md]({{ .Permalink }}){{ end }}{{ with $d }} — {{ . }}{{ end }}
+{{ end -}}
+
+{{- /* 精选文章（取自首页 featured 组件配置） */ -}}
+{{- $featured := slice -}}
+{{- range .Site.Params.widgets.homepage -}}
+    {{- if eq .type "featured" -}}
+        {{- range .params.pages -}}
+            {{- with $.Site.GetPage . -}}{{- $featured = $featured | append . -}}{{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- with $featured }}
+
+## 精选文章
+
+{{ range . }}{{ template "_line" . }}{{ end }}
+{{- end }}
+
+## 全部文章（按分类）
+
+{{ range $name, $taxonomy := .Site.Taxonomies.categories -}}
+{{- $term := $.Site.GetPage (printf "/categories/%s" $name) -}}
+### {{ with $term }}{{ .Title }}{{ else }}{{ $name }}{{ end }}
+
+{{ range $taxonomy.Pages.ByDate.Reverse }}{{ template "_line" . }}{{ end }}
+{{ end -}}

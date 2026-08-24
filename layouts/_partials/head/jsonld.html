@@ -1,0 +1,120 @@
+{{- /*
+  JSON-LD 实体图谱（schema.org），供 AI 搜索引擎 / GEO 理解站点与作者、
+  并在引用时正确署名。所有实体用 @id 交叉引用，避免重复定义冲突。
+  - 首页：WebSite + Person
+  - 文章：BlogPosting + BreadcrumbList + Person（+ 引用 WebSite）
+  - 关于页：ProfilePage + Person
+*/ -}}
+
+{{- $base := .Site.BaseURL -}}
+{{- $personID := printf "%sabout/#person" $base -}}
+{{- $websiteID := printf "%s#website" $base -}}
+{{- $ccURL := "https://creativecommons.org/licenses/by-nc-sa/4.0/" -}}
+
+{{- /* 复用的 Person 实体 */ -}}
+{{- $person := dict
+    "@type" "Person"
+    "@id" $personID
+    "name" "小盒子"
+    "alternateName" "Leo"
+    "url" (printf "%sabout/" $base)
+    "sameAs" (slice "https://github.com/xiaobox")
+-}}
+{{- with .Site.Params.keywords -}}{{- $person = merge $person (dict "knowsAbout" .) -}}{{- end -}}
+
+{{- /* 复用的 WebSite 实体（含站内搜索 Action） */ -}}
+{{- $website := dict
+    "@type" "WebSite"
+    "@id" $websiteID
+    "name" .Site.Title
+    "url" $base
+    "description" .Site.Params.description
+    "inLanguage" "zh-CN"
+    "publisher" (dict "@id" $personID)
+    "potentialAction" (dict
+        "@type" "SearchAction"
+        "target" (dict
+            "@type" "EntryPoint"
+            "urlTemplate" (printf "%ssearch/?keyword={search_term_string}" $base)
+        )
+        "query-input" "required name=search_term_string"
+    )
+-}}
+
+{{- /* ============ 首页 ============ */ -}}
+{{- if .IsHome -}}
+{{- $graph := slice $website $person -}}
+{{- $ld := dict "@context" "https://schema.org" "@graph" $graph -}}
+<script type="application/ld+json">
+{{ $ld | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end -}}
+
+{{- /* ============ 文章页 ============ */ -}}
+{{- if and (eq .Kind "page") (eq .Section "post") -}}
+{{- $desc := .Description -}}
+{{- if not $desc -}}{{- $desc = .Summary -}}{{- end -}}
+{{- $desc = $desc | plainify | replaceRE "\\s+" " " | strings.TrimSpace | truncate 300 -}}
+
+{{- $post := dict
+    "@type" "BlogPosting"
+    "@id" (printf "%s#article" .Permalink)
+    "headline" .Title
+    "description" $desc
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+    "author" (dict "@id" $personID)
+    "publisher" (dict "@id" $personID)
+    "copyrightHolder" (dict "@id" $personID)
+    "copyrightYear" (.Date.Format "2006")
+    "isPartOf" (dict "@id" $websiteID)
+    "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+    "url" .Permalink
+    "inLanguage" "zh-CN"
+    "wordCount" .WordCount
+    "isAccessibleForFree" true
+-}}
+{{- with .Params.tags -}}{{- $post = merge $post (dict "keywords" .) -}}{{- end -}}
+{{- with .Params.categories -}}{{- $post = merge $post (dict "articleSection" .) -}}{{- end -}}
+{{- if ne .Params.license false -}}{{- $post = merge $post (dict "license" $ccURL) -}}{{- end -}}
+{{- with .Params.original_url -}}{{- $post = merge $post (dict "sameAs" (slice .)) -}}{{- end -}}
+{{- with .Params.image -}}
+    {{- $img := . | absURL -}}
+    {{- $post = merge $post (dict "image" $img "thumbnailUrl" $img) -}}
+{{- end -}}
+
+{{- /* 面包屑：首页 → 分类 → 文章 */ -}}
+{{- $cats := .Params.categories -}}
+{{- $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" "首页" "item" $base) -}}
+{{- if $cats -}}
+    {{- $cat := index $cats 0 -}}
+    {{- $catURL := printf "%scategories/%s/" $base (urlize $cat) -}}
+    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" $cat "item" $catURL) -}}
+    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink) -}}
+{{- else -}}
+    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) -}}
+{{- end -}}
+{{- $breadcrumb := dict "@type" "BreadcrumbList" "itemListElement" $crumbs -}}
+
+{{- $graph := slice $post $breadcrumb $person -}}
+{{- $ld := dict "@context" "https://schema.org" "@graph" $graph -}}
+<script type="application/ld+json">
+{{ $ld | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end -}}
+
+{{- /* ============ 关于页 ============ */ -}}
+{{- if eq .RelPermalink "/about/" -}}
+{{- $profile := dict
+    "@type" "ProfilePage"
+    "@id" (printf "%s#profilepage" .Permalink)
+    "url" .Permalink
+    "inLanguage" "zh-CN"
+    "isPartOf" (dict "@id" $websiteID)
+    "mainEntity" $person
+-}}
+{{- $ld := dict "@context" "https://schema.org" "@graph" (slice $profile $website) -}}
+<script type="application/ld+json">
+{{ $ld | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end -}}
