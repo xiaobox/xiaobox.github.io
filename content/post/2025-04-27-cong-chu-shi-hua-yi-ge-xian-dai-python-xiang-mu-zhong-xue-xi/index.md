@@ -1,6 +1,7 @@
 ---
 title: "从初始化一个现代 python 项目中学习到的东西"
 slug: 2025-04-27-cong-chu-shi-hua-yi-ge-xian-dai-python-xiang-mu-zhong-xue-xi
+description: "以 uv 初始化一个现代 Python 项目为例，讲解环境管理、虚拟环境、pyproject.toml 各配置项含义与 uv.lock 依赖锁定，总结现代 Python 工程的最佳实践。"
 date: 2025-04-27T06:57:05.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-04-27-cong-chu-shi-hua-yi-ge-xian-dai-python-xiang-mu-zhong-xue-xi/cover.jpg
 original_url: https://mp.weixin.qq.com/s/KW5L59EfTRCPb8fTg-M4ZA

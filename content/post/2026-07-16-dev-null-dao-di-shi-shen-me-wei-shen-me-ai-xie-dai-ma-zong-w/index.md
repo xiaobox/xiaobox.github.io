@@ -1,7 +1,7 @@
 ---
 title: "/dev/null 到底是什么,为什么 AI 写代码总往里扔东西"
 slug: 2026-07-16-dev-null-dao-di-shi-shen-me-wei-shen-me-ai-xie-dai-ma-zong-w
-description: ""
+description: "从 AI 写命令爱接 2>/dev/null 讲起，拆解标准输出与错误的重定向语法，说明 /dev/null 是 Unix「一切皆文件」原则的必然产物，相当于文件系统里的零。"
 date: 2026-07-16T03:56:15.000Z
 image:
 original_url:

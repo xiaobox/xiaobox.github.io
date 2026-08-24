@@ -1,7 +1,7 @@
 ---
 title: "为什么 .gitignore 看起来像个没有名字的文件？"
 slug: 2026-04-30-wei-shen-me-gitignore-kan-qi-lai-xiang-ge-mei-you-ming-zi-de-wen-jian
-description: ""
+description: "从 .gitignore 的奇怪文件名讲起：Unix 里点只是普通字符，早期 ls 为跳过 . 和 .. 加的一行判断顺带隐藏了点开头文件，由此衍生出 dotfile 配置文化。"
 date: 2026-04-30T10:10:00.000Z
 image: 
 original_url: 

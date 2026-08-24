@@ -1,6 +1,7 @@
 ---
 title: "火山引擎 + DeepSeekR1 + ChatWise"
 slug: 2025-02-14-huo-shan-yin-qing-deepseekr1-chatwise
+description: "针对 DeepSeek 官网与 API 不稳定的问题，实测多家替代服务后选择火山引擎的 DeepSeek R1 推理接入点，记录在 ChatWise 客户端配置 API 的完整步骤与踩坑经验。"
 date: 2025-02-14T04:59:28.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-02-14-huo-shan-yin-qing-deepseekr1-chatwise/cover.jpg
 original_url: https://mp.weixin.qq.com/s/AjbgxRxJsgPPH2xiy7hEZQ

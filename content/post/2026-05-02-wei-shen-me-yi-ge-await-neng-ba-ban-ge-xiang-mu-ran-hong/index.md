@@ -1,7 +1,7 @@
 ---
 title: "为什么一个 await 能把半个项目染红？"
 slug: 2026-05-02-wei-shen-me-yi-ge-await-neng-ba-ban-ge-xiang-mu-ran-hong
-description: ""
+description: "从改一个 await 染红整条调用链讲起，梳理 promise、C10K、回调地狱到 async/await 的演进，剖析函数染色问题，以及 Java 虚拟线程与 Zig 移除关键字的另类解法。"
 date: 2026-05-02T06:00:00.000Z
 image: 
 original_url: 

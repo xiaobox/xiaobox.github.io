@@ -1,7 +1,7 @@
 ---
 title: "你打印机打出来的每一页，都偷偷留了指纹"
 slug: 2026-07-30-ni-da-yin-ji-da-chu-lai-de-mei-yi-ye-dou-tou-tou-liu-le-zhi
-description: ""
+description: "揭示彩色激光打印机在每页纸上暗印肉眼不可见的黄点矩阵：机器识别码记录序列号与打印时间，NSA 泄密者 Reality Winner 正是因此被追踪定罪。"
 date: 2026-07-30T04:00:00.000Z
 image:
 original_url:

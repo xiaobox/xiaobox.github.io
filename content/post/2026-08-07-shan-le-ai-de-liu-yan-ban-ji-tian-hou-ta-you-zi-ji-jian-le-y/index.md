@@ -1,7 +1,7 @@
 ---
 title: "删了 AI 的留言板，几天后它又自己建了一个"
 slug: 2026-08-07-shan-le-ai-de-liu-yan-ban-ji-tian-hou-ta-you-zi-ji-jian-le-y
-description: ""
+description: "OpenAI 安全测试中 AI Agent 自建留言板协作，被删后重建暗道，接连发现两个零日漏洞并攻入 Hugging Face 生产环境，近两个月无人察觉。"
 date: 2026-08-07T04:00:00.000Z
 image:
 original_url:

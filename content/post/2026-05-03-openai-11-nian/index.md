@@ -1,7 +1,7 @@
 ---
 title: "OpenAI 11 年"
 slug: 2026-05-03-openai-11-nian
-description: ""
+description: "回顾 OpenAI 从 2015 年非营利创立到马斯克 1500 亿美元诉讼的 11 年：分裂、转型营利、ChatGPT 爆发、罢免风波与创始团队离散，当年的开源承诺已无人坚守。"
 date: 2026-05-03T05:00:00.000Z
 image: 
 original_url: 

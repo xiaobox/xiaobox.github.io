@@ -1,6 +1,7 @@
 ---
 title: "基于 Vue2 的文件预览解决方案，全部代码由 Cursor AI 助手生成"
 slug: 2025-01-17-ji-yu-vue2-de-wen-jian-yu-lan-jie-jue-fang-an-quan-bu-dai-ma
+description: "基于 Vue2 的纯前端 Office 与 PDF 文件预览方案，全部代码由 Cursor 生成，介绍 PDF.js 分页渲染等技术选型，并总结 AI 编程工具需以扎实研发经验为前提的使用体会。"
 date: 2025-01-17T04:35:49.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-01-17-ji-yu-vue2-de-wen-jian-yu-lan-jie-jue-fang-an-quan-bu-dai-ma/cover.jpg
 original_url: https://mp.weixin.qq.com/s/trNs4OMY6u2CB1RUPxpipA

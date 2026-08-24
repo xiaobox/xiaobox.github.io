@@ -1,6 +1,7 @@
 ---
 title: "3 毛钱干大事？ 用了几天豆包编程模型，我来扒一扒字节这波操作"
 slug: 2025-11-17-3-mao-qian-gan-da-shi-yong-le-ji-tian-dou-bao-bian-cheng-mo-
+description: "实测字节豆包编程模型 Doubao-Seed-Code，覆盖低价策略、256K 上下文、原生 VLM 生成前端代码及兼容 Claude Code 的接入方式，认为其性价比突出值得一试。"
 date: 2025-11-17T12:58:03.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-11-17-3-mao-qian-gan-da-shi-yong-le-ji-tian-dou-bao-bian-cheng-mo-/cover.jpg
 original_url: https://mp.weixin.qq.com/s/CAQt60bVcUfEimZ-kVSKWQ

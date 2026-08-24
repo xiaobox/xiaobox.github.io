@@ -1,6 +1,7 @@
 ---
 title: "数据库选型必看：MySQL 与 MariaDB 功能对比全解析"
 slug: 2024-09-09-shu-ju-ku-xuan-xing-bi-kan-mysql-yu-mariadb-gong-neng-dui-bi
+description: "从表定义、JSON、压缩、生成列、约束、DDL 操作和元数据等方面详细对比 MySQL 与 MariaDB 的功能差异，并给出数据库选型与迁移时的建议。"
 date: 2024-09-09T04:12:18.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-09-09-shu-ju-ku-xuan-xing-bi-kan-mysql-yu-mariadb-gong-neng-dui-bi/cover.jpg
 original_url: https://mp.weixin.qq.com/s/XVmTOrMWivsJb5uLqjOuYg

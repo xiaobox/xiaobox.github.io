@@ -1,7 +1,7 @@
 ---
 title: "出租车司机平均少活七年，却几乎不得老年痴呆"
 slug: 2026-08-13-chu-zu-che-si-ji-ping-jun-shao-huo-qi-nian-que-ji-hu-bu-de-l
-description: ""
+description: "BMJ 研究发现出租车司机寿命偏短却极少死于阿尔茨海默，结合伦敦司机海马体研究说明主动记路能锻炼海马体，长期依赖 GPS 则让空间记忆退化。"
 date: 2026-08-13T04:00:00.000Z
 image:
 original_url:

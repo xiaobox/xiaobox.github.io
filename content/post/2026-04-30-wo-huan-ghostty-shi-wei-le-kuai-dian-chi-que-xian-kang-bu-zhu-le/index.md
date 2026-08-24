@@ -1,7 +1,7 @@
 ---
 title: "我换 Ghostty 是为了快，电池却先扛不住了"
 slug: 2026-04-30-wo-huan-ghostty-shi-wei-le-kuai-dian-chi-que-xian-kang-bu-zhu-le
-description: ""
+description: "分析 Ghostty 等 GPU 加速终端跑 Claude Code 时异常耗电的原因：为大吞吐设计的渲染链路与 AI 低速碎片化流式输出错配，并给出换终端或关 GPU 渲染的建议。"
 date: 2026-04-30T10:00:00.000Z
 image: 
 original_url: 

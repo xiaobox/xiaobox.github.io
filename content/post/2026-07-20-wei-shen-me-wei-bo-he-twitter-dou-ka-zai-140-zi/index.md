@@ -1,7 +1,7 @@
 ---
 title: "为什么微博和 Twitter 都卡在 140 字"
 slug: 2026-07-20-wei-shen-me-wei-bo-he-twitter-dou-ka-zai-140-zi
-description: ""
+description: "考证 140 字限制的来源：短信 160 字符上限减去 20 字符用户名得到 Twitter 的 140，而 160 出自 1985 年德国工程师用打字机数字符的实验，微博只是照搬了这条产品规定。"
 date: 2026-07-20T04:00:00.000Z
 image:
 original_url:

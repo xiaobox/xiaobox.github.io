@@ -1,6 +1,7 @@
 ---
 title: "在 AI Agent 时代，许多硅谷程序员已经几乎不再亲手写代码了"
 slug: 2026-03-14-zai-ai-agent-shi-dai-xu-duo-gui-gu-cheng-xu-yuan-yi-jing-ji-
+description: "译文，原载纽约时报杂志：AI Agent 时代硅谷程序员几乎不再亲手写代码，转向用自然语言指挥 agent，角色从写代码的工匠变为做判断的建筑师。"
 date: 2026-03-14T04:58:37.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2026-03-14-zai-ai-agent-shi-dai-xu-duo-gui-gu-cheng-xu-yuan-yi-jing-ji-/cover.jpg
 original_url: https://mp.weixin.qq.com/s/7pskNf_4lp1b6WeBcU1UJg

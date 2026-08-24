@@ -1,7 +1,7 @@
 ---
 title: "Codex 一接上无限画布，Lovart 们就危险了"
 slug: 2026-06-21-codex-yi-jie-shang-wu-xian-hua-bu-lovart-men-jiu-wei-xian-le
-description: ""
+description: "试用把 Codex 接入本地无限画布的插件 Cowart：画布替 Codex 保存空间上下文，图片可标注迭代修改，通用 Agent 加画布的路线威胁 Lovart 类产品。"
 date: 2026-06-21T02:55:03.000Z
 image: 
 original_url: 

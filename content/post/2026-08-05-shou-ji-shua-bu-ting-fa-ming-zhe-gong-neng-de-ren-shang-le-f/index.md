@@ -1,7 +1,7 @@
 ---
 title: "手机刷不停？ 发明这功能的人，上了法庭"
 slug: 2026-08-05-shou-ji-shua-bu-ting-fa-ming-zhe-gong-neng-de-ren-shang-le-f
-description: ""
+description: "讲述无限滚动发明者 Aza Raskin 的故事：取消翻页按钮消除了大脑停下的信号，让刷手机停不下来，他为此公开忏悔并出庭作证，Meta 因上瘾性设计被判赔偿。"
 date: 2026-08-05T04:00:00.000Z
 image:
 original_url:

@@ -1,7 +1,7 @@
 ---
 title: "他发明了 GIF，管不了别人怎么念"
 slug: 2026-08-10-ta-fa-ming-le-gif-guan-bu-liao-bie-ren-zen-me-nian
-description: ""
+description: "GIF 之父 Steve Wilhite 坚持 GIF 应读软 G 的 JIF，纠正二十六年仍被七成用户无视，折射发明者意愿与语言由使用者决定之间的争论。"
 date: 2026-08-10T04:00:00.000Z
 image:
 original_url:

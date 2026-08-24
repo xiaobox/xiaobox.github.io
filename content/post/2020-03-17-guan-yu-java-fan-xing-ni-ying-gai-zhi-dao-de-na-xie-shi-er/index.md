@@ -1,6 +1,7 @@
 ---
 title: "关于java泛型你应该知道的那些事儿"
 slug: 2020-03-17-guan-yu-java-fan-xing-ni-ying-gai-zhi-dao-de-na-xie-shi-er
+description: "系统梳理Java泛型知识：泛型类、接口与方法的定义，上下边界通配符的读写规则（频繁读用extends、频繁写用super），T与?的区别及泛型的各种使用限制。"
 date: 2020-03-17T09:30:49.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-03-17-guan-yu-java-fan-xing-ni-ying-gai-zhi-dao-de-na-xie-shi-er/cover.jpg
 original_url: https://mp.weixin.qq.com/s/_KaH4aL_Jc__3vJ9t-ydPg

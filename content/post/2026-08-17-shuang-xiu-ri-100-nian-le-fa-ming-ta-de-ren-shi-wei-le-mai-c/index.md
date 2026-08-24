@@ -1,7 +1,7 @@
 ---
 title: "双休日100年了，发明它的人是为了卖车"
 slug: 2026-08-17-shuang-xiu-ri-100-nian-le-fa-ming-ta-de-ren-shi-wei-le-mai-c
-description: ""
+description: "双休日诞生 100 年：福特 1926 年为让工人有时间消费买车而推行双休，苏联取消周末的轮休实验失败，中国 1995 年才正式实行五天工作制。"
 date: 2026-08-17T04:00:00.000Z
 image:
 original_url:

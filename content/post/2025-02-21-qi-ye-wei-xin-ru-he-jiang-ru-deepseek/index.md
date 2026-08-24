@@ -1,6 +1,7 @@
 ---
 title: "企业微信如何将入 DeepSeek"
 slug: 2025-02-21-qi-ye-wei-xin-ru-he-jiang-ru-deepseek
+description: "图文演示在企业微信管理后台通过「安全管理」中的「智能机器人」创建机器人并接入 DeepSeek 模型的四个步骤，创建后可在通讯录中直接对话使用。"
 date: 2025-02-21T02:57:25.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-02-21-qi-ye-wei-xin-ru-he-jiang-ru-deepseek/cover.jpg
 original_url: https://mp.weixin.qq.com/s/V4F3c6UfhHB1jCo-fy4ilw

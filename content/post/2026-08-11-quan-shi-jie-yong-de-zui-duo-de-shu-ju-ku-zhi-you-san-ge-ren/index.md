@@ -1,7 +1,7 @@
 ---
 title: "全世界用得最多的数据库，只有三个人在写"
 slug: 2026-08-11-quan-shi-jie-yong-de-zui-duo-de-shu-ju-ku-zhi-you-san-ge-ren
-description: ""
+description: "SQLite 部署量超过其他数据库引擎总和，却只由三个人维护：代码进入公共领域免费使用，靠闭源测试套件 TH3 收费，测试代码是正式代码的 590 倍。"
 date: 2026-08-11T04:00:00.000Z
 image:
 original_url:

@@ -1,6 +1,7 @@
 ---
 title: "“地球上最聪明的人工智能” Grok3 发布！"
 slug: 2025-02-18-di-qiu-shang-zui-cong-ming-de-ren-gong-zhi-neng-grok3-fa-bu
+description: "概览马斯克 xAI 发布的 Grok3：动用 10 万块 H100 训练，带来 DeepSearch 与 Think 等新功能，多项基准测试超越 GPT-4o 等模型，仅向付费用户开放。"
 date: 2025-02-18T06:21:47.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-02-18-di-qiu-shang-zui-cong-ming-de-ren-gong-zhi-neng-grok3-fa-bu/cover.jpg
 original_url: https://mp.weixin.qq.com/s/vt84glkXNyBtyk47rsaaRQ

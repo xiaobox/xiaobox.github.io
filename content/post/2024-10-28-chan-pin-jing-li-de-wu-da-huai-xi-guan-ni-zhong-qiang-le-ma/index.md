@@ -1,6 +1,7 @@
 ---
 title: "产品经理的五大坏习惯，你中枪了吗？"
 slug: 2024-10-28-chan-pin-jing-li-de-wu-da-huai-xi-guan-ni-zhong-qiang-le-ma
+description: "以调侃口吻列举产品经理常见的五种无效习惯：张口就说这很简单、越俎代庖做原型、口述编程指导开发、推崇照抄竞品以及质疑工时评估，呼吁尊重专业分工。"
 date: 2024-10-28T03:43:43.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-10-28-chan-pin-jing-li-de-wu-da-huai-xi-guan-ni-zhong-qiang-le-ma/cover.jpg
 original_url: https://mp.weixin.qq.com/s/Hh3xBMsKbAABgV6AQ6Oujw

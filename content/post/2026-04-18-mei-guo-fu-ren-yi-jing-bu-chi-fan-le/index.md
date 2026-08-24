@@ -1,7 +1,7 @@
 ---
 title: "美国富人已经不吃饭了"
 slug: 2026-04-18-mei-guo-fu-ren-yi-jing-bu-chi-fan-le
-description: ""
+description: "从司美格鲁肽风靡美国上层说起，回顾百年来六代减肥神药的兴衰循环，分析 GLP-1 这一代为何可能不同，以及身材成为阶层标记、消费重心从物质转向身体的趋势。"
 date: 2026-04-18T08:56:57.000Z
 image: 
 original_url: 

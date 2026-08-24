@@ -1,6 +1,7 @@
 ---
 title: "你工作的目的不是取悦老板而是对公司有利"
 slug: 2021-01-21-ni-gong-zuo-de-mu-di-bu-shi-qu-yue-lao-ban-er-shi-dui-gong-s
+description: "结合网飞《不拘一格》一书的读书笔记，讨论提升人才密度、坦诚沟通与取消管控三大管理法则，并反思这些方法在中国本土企业中的适用性。"
 date: 2021-01-21T08:10:41.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2021-01-21-ni-gong-zuo-de-mu-di-bu-shi-qu-yue-lao-ban-er-shi-dui-gong-s/cover.jpg
 original_url: https://mp.weixin.qq.com/s/w-ITAtG1Dr7pQHOkBFXOpQ

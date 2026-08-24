@@ -1,7 +1,7 @@
 ---
 title: "微软当年其实也想用正斜杠"
 slug: 2026-04-24-wei-ruan-dang-nian-qi-shi-ye-xiang-yong-zheng-xie-gang
-description: ""
+description: "追溯 Windows 反斜杠路径分隔符的由来：1983 年 DOS 2.0 本想沿用 Unix 的正斜杠，因 IBM 坚持兼容参数前缀而改用反斜杠，这笔妥协一用就是 40 多年。"
 date: 2026-04-23T17:05:00.000Z
 image: 
 original_url: https://mp.weixin.qq.com/s/HXgssuVg8P80OFbGB-W1Bw

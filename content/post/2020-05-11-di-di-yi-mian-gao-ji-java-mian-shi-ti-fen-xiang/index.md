@@ -1,6 +1,7 @@
 ---
 title: "滴滴一面（高级java）面试题分享"
 slug: 2020-05-11-di-di-yi-mian-gao-ji-java-mian-shi-ti-fen-xiang
+description: "滴滴高级Java一面真题及要点解析：volatile内存屏障原理、JVM问题排查命令、AQS、Redis高可用方案、Spring Cloud与Dubbo区别及Hystrix熔断器三种状态。"
 date: 2020-05-11T07:25:08.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-05-11-di-di-yi-mian-gao-ji-java-mian-shi-ti-fen-xiang/cover.jpg
 original_url: https://mp.weixin.qq.com/s/SzRafkLAXowYeAUNc-gRWg

@@ -1,7 +1,7 @@
 ---
 title: "酒店回访打给了不该接的人，问题出在 PMS 上"
 slug: 2026-04-21-jiu-dian-hui-fang-da-gei-le-bu-gai-jie-de-ren-wen-ti-chu-zai-pms-shang
-description: ""
+description: "由大同酒店回访电话引发的家庭风波切入，剖析酒店 PMS 系统中入住数据默认向回访外包、营销、会员等多环节开放的行业结构问题，并给出减少个人暴露的建议。"
 date: 2026-04-21T11:54:31.000Z
 image: 
 original_url: 

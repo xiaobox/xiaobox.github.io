@@ -1,7 +1,7 @@
 ---
 title: "Markdown 没凉，HTML 也没赢"
 slug: 2026-05-15-markdown-mei-liang-html-ye-mei-ying
-description: ""
+description: "逐条评析 Anthropic 工程师「用 HTML 替代 Markdown」的主张，指出 Markdown 是源格式、HTML 是视图格式，提出 source、HTML 岛与一次性 artifact 三层各司其职。"
 date: 2026-05-15T05:00:00.000Z
 image: 
 original_url: 

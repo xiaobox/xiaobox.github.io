@@ -1,7 +1,7 @@
 ---
 title: "梁文锋的克制不是善良，是一笔账"
 slug: 2026-07-24-liang-wen-feng-de-ke-zhi-bu-shi-shan-liang-shi-yi-bi-zhang
-description: ""
+description: "解读梁文锋与投资人的内部录音：DeepSeek 的克制不是情怀而是博弈论算出的策略，真正的风险在于只有对手二十分之一的算力能否支撑到 AGI 终局。"
 date: 2026-07-24T04:00:00.000Z
 image:
 original_url:

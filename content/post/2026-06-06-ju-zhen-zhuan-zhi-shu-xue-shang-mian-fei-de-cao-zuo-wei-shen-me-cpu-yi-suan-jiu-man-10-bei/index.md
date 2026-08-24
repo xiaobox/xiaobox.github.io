@@ -1,7 +1,7 @@
 ---
 title: "矩阵转置：数学上免费的操作，为什么 CPU 一算就慢 10 倍？"
 slug: 2026-06-06-ju-zhen-zhuan-zhi-shu-xue-shang-mian-fei-de-cao-zuo-wei-shen-me-cpu-yi-suan-jiu-man-10-bei
-description: ""
+description: "以矩阵转置为例讲解 CPU 缓存机制：行优先存储、cache line、预取器与 SIMD 如何造成 10 倍性能差距，分块算法为何能全部解锁。"
 date: 2026-06-06T02:00:00.000Z
 image: 
 original_url: 

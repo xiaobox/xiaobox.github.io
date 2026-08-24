@@ -1,6 +1,7 @@
 ---
 title: "OpenAI DevDay [2025] 概览"
 slug: 2025-10-07-openai-devday-2025-gai-lan
+description: "概览 OpenAI DevDay 2025 的主要发布内容：Apps in ChatGPT、AgentKit、Sora 2 API、Codex 正式版以及 GPT-5 Pro 等新模型与开发者工具。"
 date: 2025-10-07T04:46:54.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-10-07-openai-devday-2025-gai-lan/cover.jpg
 original_url: https://mp.weixin.qq.com/s/VF5qc3o622V3uu0Pq61yUA

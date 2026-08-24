@@ -1,6 +1,7 @@
 ---
 title: "RAG 的五大范式"
 slug: 2025-03-11-rag-de-wu-da-fan-shi
+description: "以图解方式梳理 RAG 的五大范式：朴素 RAG、高级 RAG、模块化 RAG、GraphRAG 与 Agentic RAG，逐一介绍各自的定义、核心思想与优缺点。"
 date: 2025-03-11T10:27:02.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-03-11-rag-de-wu-da-fan-shi/cover.jpg
 original_url: https://mp.weixin.qq.com/s/WWL1tV2WJI4Ifit61EYCbg

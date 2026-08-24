@@ -1,6 +1,7 @@
 ---
 title: "今日 AI 情报（2025-11-10）"
 slug: 2025-11-10-jin-ri-ai-qing-bao-2025-11-10
+description: "AI 情报日报，收录 Kimi K2-Thinking 实测、太空算力竞赛、FP8 训练方案、Eclipse 用 JVM 技术栈构建 Agent 的开源平台及解耦推理架构等六则资讯。"
 date: 2025-11-10T09:25:33.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-11-10-jin-ri-ai-qing-bao-2025-11-10/cover.jpg
 original_url: https://mp.weixin.qq.com/s/fnIZMLku3ojZ-1zvlhlxQg

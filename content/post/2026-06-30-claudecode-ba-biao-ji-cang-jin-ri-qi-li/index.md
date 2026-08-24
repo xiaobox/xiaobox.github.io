@@ -1,7 +1,7 @@
 ---
 title: "Claude Code 把标记藏进了日期里"
 slug: 2026-06-30-claudecode-ba-biao-ji-cang-jin-ri-qi-li
-description: ""
+description: "逆向分析 Claude Code 发布包：在自定义 ANTHROPIC_BASE_URL 场景下，它把网关域名命中情况和中国时区信息编码进日期语句的撇号码点与分隔符里，实现隐蔽指纹标记。"
 date: 2026-06-30T12:54:00.000Z
 image: 
 original_url: 

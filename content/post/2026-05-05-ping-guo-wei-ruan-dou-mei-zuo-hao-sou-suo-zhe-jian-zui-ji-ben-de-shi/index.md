@@ -1,7 +1,7 @@
 ---
 title: "苹果微软都没做好搜索这件最基本的事"
 slug: 2026-05-05-ping-guo-wei-ruan-dou-mei-zuo-hao-sou-suo-zhe-jian-zui-ji-ben-de-shi
-description: ""
+description: "对比 Windows Search 与 Spotlight 各自的失败方式，以及 Everything 直读 MFT、Raycast 做命令面板的成功路线，指出系统搜索败在追求通用而丢掉核心场景。"
 date: 2026-05-05T05:00:00.000Z
 image: 
 original_url: 

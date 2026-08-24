@@ -1,6 +1,7 @@
 ---
 title: "AI 界的苏秦、张仪会成功吗？"
 slug: 2024-08-03-ai-jie-de-su-qin-zhang-yi-hui-cheng-gong-ma
+description: "借体验 360 AI 助手的 CoE 多模型路由产品，比较 MoE 与 CoE 两种思路，指出其偏向自家模型等体验问题，探讨聚合多家国产大模型的路由产品能否成功。"
 date: 2024-08-03T10:43:04.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-08-03-ai-jie-de-su-qin-zhang-yi-hui-cheng-gong-ma/cover.jpg
 original_url: https://mp.weixin.qq.com/s/ztYMoQaiMZKpVEtBUX9rAg

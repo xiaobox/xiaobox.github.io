@@ -1,7 +1,7 @@
 ---
 title: "为什么有人花 50 小时手画一张折线图，比 AI 三秒出的更值钱"
 slug: 2026-06-06-wei-shen-me-you-ren-hua-50-xiao-shi-shou-hua-yi-zhang-zhe-xian-tu
-description: ""
+description: "从 Doug MacDowell 花 50 小时手绘折线图谈起：当 AI 让产出的边际成本趋零，慢与手工反而成为稀缺的判断力和真实性证明。"
 date: 2026-06-06T02:00:00.000Z
 image: 
 original_url: 

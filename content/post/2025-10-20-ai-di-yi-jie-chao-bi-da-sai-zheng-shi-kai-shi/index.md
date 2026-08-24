@@ -1,6 +1,7 @@
 ---
 title: "AI 第一界炒币大赛正式开始"
 slug: 2025-10-20-ai-di-yi-jie-chao-bi-da-sai-zheng-shi-kai-shi
+description: "介绍 Nof1 发起的 Alpha Arena 大模型实盘炒币竞赛：六个 AI 模型以相同提示词和 1 万美元本金在 Hyperliquid 交易加密永续合约，检验其真实市场决策能力。"
 date: 2025-10-20T13:31:47.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-10-20-ai-di-yi-jie-chao-bi-da-sai-zheng-shi-kai-shi/cover.jpg
 original_url: https://mp.weixin.qq.com/s/kjhYuShoD-A8gtuHbBhHLg

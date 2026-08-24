@@ -1,7 +1,7 @@
 ---
 title: "Claude 要你交护照了，这背后藏着一个创始人的执念"
 slug: 2026-04-16-claude-yao-ni-jiao-hu-zhao-le-zhe-bei-hou-cang-zhe-yi-ge-chuang-shi-ren-de-zhi-nian
-description: ""
+description: "从 Claude 要求护照与自拍的身份验证说起，梳理 Anthropic 逐步收紧的四个阶段与创始人的安全执念，借 COCOM 封锁史指出此类限制挡住的多是正常用户。"
 date: 2026-04-16T02:00:00.000Z
 image: 
 original_url: 

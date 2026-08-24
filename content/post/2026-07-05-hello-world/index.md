@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 slug: 2026-07-05-hello-world
-description: ""
+description: "以脱口秀笔法写程序员八年职场：从 Hello World 的理想到 996、优化裁员与 AI 冲击，被毕业的老程序员强哥开起咖啡店，拉花是个死循环。"
 date: 2026-07-05T07:46:35.000Z
 image:
 original_url:

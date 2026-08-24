@@ -1,7 +1,7 @@
 ---
 title: "有人在起诉书里藏了一句白色的字,想骗 AI 帮他打赢官司"
 slug: 2026-08-14-you-ren-zai-qi-su-shu-li-cang-le-yi-ju-bai-se-de-zi-xiang-pi
-description: ""
+description: "美国一名原告在起诉书空白处用白色字体藏提示注入指令试图操控 AI 判决，被法官以「射偏了不等于没开枪」定性为不正当并永久禁止电子立案。"
 date: 2026-08-14T04:00:00.000Z
 image:
 original_url:

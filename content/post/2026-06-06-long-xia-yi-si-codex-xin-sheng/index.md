@@ -1,7 +1,7 @@
 ---
 title: "龙虾已死，Codex 新生"
 slug: 2026-06-06-long-xia-yi-si-codex-xin-sheng
-description: ""
+description: "实测 Codex 新功能 Appshots：它让 Codex 看见并直接操作你正在用的应用，延续 OpenClaw 的个人桌面 agent 路线，也预示大量重复性工作将被接管。"
 date: 2026-06-06T02:00:00.000Z
 image: 
 original_url: 

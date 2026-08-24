@@ -1,7 +1,7 @@
 ---
 title: "4700 万人看它开过悬崖，没人问它在哪学的车"
 slug: 2026-06-14-4700-wan-ren-kan-ta-kai-guo-xuan-ya-mei-ren-wen-ta-zai-na-xu
-description: ""
+description: "特斯拉 FSD 中国版在悬崖挂壁公路自动驾驶走红，背后是数据出境与芯片管制切断训练闭环，它只能靠公开视频加模拟器学开中国的路。"
 date: 2026-06-14T10:05:39.000Z
 image: 
 original_url: 

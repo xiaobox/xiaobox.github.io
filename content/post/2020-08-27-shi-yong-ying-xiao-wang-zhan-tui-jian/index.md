@@ -1,6 +1,7 @@
 ---
 title: "实用营销网站推荐"
 slug: 2020-08-27-shi-yong-ying-xiao-wang-zhan-tui-jian
+description: "汇总一批实用营销类网站：涵盖营销知识、文案、公关事件、内容生产、平面与工业设计等方向，包括广告门、数英、梅花网、顶尖文案、洛客等站点及网址。"
 date: 2020-08-27T15:32:14.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-08-27-shi-yong-ying-xiao-wang-zhan-tui-jian/cover.jpg
 original_url: https://mp.weixin.qq.com/s/6SzSx1MwHfKrTHQuwdHSrg

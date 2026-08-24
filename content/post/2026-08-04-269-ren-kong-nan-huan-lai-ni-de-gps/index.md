@@ -1,7 +1,7 @@
 ---
 title: "269人空难换来你的GPS"
 slug: 2026-08-04-269-ren-kong-nan-huan-lai-ni-de-gps
-description: ""
+description: "从 1983 年大韩航空 KAL 007 被苏联击落的空难讲起，梳理 GPS 免费开放民用、2000 年关闭 SA 干扰到硬件层移除的历程：269 条人命加速了精确定位走进每个人的手机。"
 date: 2026-08-04T04:00:00.000Z
 image:
 original_url:

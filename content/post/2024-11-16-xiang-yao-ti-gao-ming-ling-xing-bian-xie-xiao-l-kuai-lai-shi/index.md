@@ -1,6 +1,7 @@
 ---
 title: "想要提高命令行编写效率，快来试试这几个快捷键！"
 slug: 2024-11-16-xiang-yao-ti-gao-ming-ling-xing-bian-xie-xiao-l-kuai-lai-shi
+description: "介绍命令行编辑的常用快捷键：Ctrl+A/E 跳转行首行尾、Alt+B/F 按单词移动、Ctrl+U/K 删除以及 Ctrl+R 搜索历史命令，并推荐交互式模糊查找工具 fzf 提升效率。"
 date: 2024-11-16T11:18:48.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-11-16-xiang-yao-ti-gao-ming-ling-xing-bian-xie-xiao-l-kuai-lai-shi/cover.jpg
 original_url: https://mp.weixin.qq.com/s/xjeoGfmLzGiKvtr3pqojPA

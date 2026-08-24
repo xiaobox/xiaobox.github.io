@@ -1,7 +1,7 @@
 ---
 title: "互联网掌管时间的神"
 slug: 2026-07-27-hu-lian-wang-zhang-guan-shi-jian-de-shen
-description: ""
+description: "讲述义务维护时区数据库 tz database 三十多年的 Paul Eggert 的故事：全球几十亿设备的时间依赖这个无偿的爱好项目，也揭示时区是政治决定而非自然规律。"
 date: 2026-07-27T04:00:00.000Z
 image:
 original_url:

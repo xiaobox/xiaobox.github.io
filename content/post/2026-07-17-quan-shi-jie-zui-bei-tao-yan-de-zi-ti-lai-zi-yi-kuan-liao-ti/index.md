@@ -1,7 +1,7 @@
 ---
 title: "全世界最被讨厌的字体，来自一款聊天软件"
 slug: 2026-07-17-quan-shi-jie-zui-bei-tao-yan-de-zi-ti-lai-zi-yi-kuan-liao-ti
-description: ""
+description: "梳理 Comic Sans 字体的诞生史：从微软卡通狗 Rover 的对话气泡到随 IE 3.0 进入全球电脑，指出它被讨厌不是因为设计差，而是被误用在了错误的场合。"
 date: 2026-07-17T04:54:47.000Z
 image:
 original_url:

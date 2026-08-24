@@ -1,6 +1,7 @@
 ---
 title: "上周 AI 大事记- 苹果智能、SB 1047 法案通过、OpenAI 芯片、SSI 获 10 亿美元融资"
 slug: 2024-09-12-shang-zhou-ai-da-shi-ji-ping-guo-zhi-neng-sb-1047-fa-an-tong
+description: "一周 AI 要闻汇总，涵盖苹果智能功能、加州 SB 1047 法案、OpenAI 自研芯片、SSI 获 10 亿美元融资，以及多项模型发布与行业研究动态。"
 date: 2024-09-12T23:00:00.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-09-12-shang-zhou-ai-da-shi-ji-ping-guo-zhi-neng-sb-1047-fa-an-tong/cover.jpg
 original_url: https://mp.weixin.qq.com/s/tt5R98uzreTnUtTsicbRDA

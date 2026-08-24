@@ -1,6 +1,7 @@
 ---
 title: "大模型开发全景图（LLM Deployment Landscape）"
 slug: 2025-10-31-da-mo-xing-kai-fa-quan-jing-tu-llm-deployment-landscape
+description: "依据蚂蚁集团开源的 LLM Deployment Landscape 全景图，按 AI Agent 与 AI Infra 两大类整理大模型开发生态的主流开源项目并附项目链接，便于按图索骥。"
 date: 2025-10-31T13:25:17.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-10-31-da-mo-xing-kai-fa-quan-jing-tu-llm-deployment-landscape/cover.jpg
 original_url: https://mp.weixin.qq.com/s/GZKtcU-PO1IaNqwSbVtmfw

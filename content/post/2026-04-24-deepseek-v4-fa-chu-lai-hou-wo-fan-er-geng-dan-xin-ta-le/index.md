@@ -1,7 +1,7 @@
 ---
 title: "DeepSeek V4 发出来后，我反而更担心它了"
 slug: 2026-04-24-deepseek-v4-fa-chu-lai-hou-wo-fan-er-geng-dan-xin-ta-le
-description: ""
+description: "从幻方 2019 年囤算力的时间线谈起，分析 DeepSeek 靠非典型组织实现原创的稀缺性，担忧其在融资与人才围猎的下半场能否守住容纳「不划算」研究的底色。"
 date: 2026-04-24T10:00:00.000Z
 image: 
 original_url: 

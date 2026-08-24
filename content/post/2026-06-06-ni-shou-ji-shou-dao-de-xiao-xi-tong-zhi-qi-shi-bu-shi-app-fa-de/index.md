@@ -1,7 +1,7 @@
 ---
 title: "你手机收到的消息通知，其实不是 App 发的"
 slug: 2026-06-06-ni-shou-ji-shou-dao-de-xiao-xi-tong-zhi-qi-shi-bu-shi-app-fa-de
-description: ""
+description: "解析手机推送通知的系统机制：所有 App 的通知都经苹果 APNs 或谷歌 FCM 中转以省电，并介绍 Server 酱、ntfy 等开发者自建推送工具。"
 date: 2026-06-06T02:00:00.000Z
 image: 
 original_url: 

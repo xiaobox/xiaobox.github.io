@@ -1,7 +1,7 @@
 ---
 title: "验证码让你点信号灯，不是在测你是不是人"
 slug: 2026-06-26-yan-zheng-ma-rang-ni-dian-xin-hao-deng-bu-shi-zai-ce-ni-shi-
-description: ""
+description: "梳理 CAPTCHA 到 reCAPTCHA 的演变：谷歌把点信号灯变成免费的 AI 数据标注，15 年间人类贡献约 8 亿小时无偿劳动，验证码实质是在教机器变得更像人。"
 date: 2026-06-26T03:55:00.000Z
 image: 
 original_url: 

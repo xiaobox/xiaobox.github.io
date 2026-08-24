@@ -1,6 +1,7 @@
 ---
 title: "docker安装gitlab-ee并破解"
 slug: 2020-09-19-docker-an-zhuang-gitlab-ee-bing-po-jie
+description: "通过 docker-compose 部署 GitLab 企业版，并用 Ruby 的 gitlab-license 生成自签名许可证替换官方公钥，从而绕过企业版授权限制的完整操作步骤。"
 date: 2020-09-19T06:33:32.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-09-19-docker-an-zhuang-gitlab-ee-bing-po-jie/cover.jpg
 original_url: https://mp.weixin.qq.com/s/79k2iZQiftwOZRPAPjRvCQ

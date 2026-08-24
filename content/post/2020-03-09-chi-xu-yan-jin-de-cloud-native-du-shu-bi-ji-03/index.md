@@ -1,6 +1,7 @@
 ---
 title: "持续演进的Cloud Native (读书笔记03)"
 slug: 2020-03-09-chi-xu-yan-jin-de-cloud-native-du-shu-bi-ji-03
+description: "《持续演进的Cloud Native》读书笔记系列第三篇，梳理可用性设计要点：可用性与可靠性的衡量、蓝绿与灰度发布、容错降级、限流算法、全链路压测与故障演练。"
 date: 2020-03-09T08:55:55.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-03-09-chi-xu-yan-jin-de-cloud-native-du-shu-bi-ji-03/cover.jpg
 original_url: https://mp.weixin.qq.com/s/sX_CrjGP9VvK_VMqkshQxA

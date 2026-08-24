@@ -1,6 +1,7 @@
 ---
 title: "多线程之 completableFuture"
 slug: 2020-07-29-duo-xian-cheng-zhi-completablefuture
+description: "结合示例讲解Java 8的CompletableFuture：从Future只能阻塞或轮询取结果的局限说起，演示异步执行、完成回调、结果转换、任务组合与Either、All等常用API。"
 date: 2020-07-29T16:00:00.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-07-29-duo-xian-cheng-zhi-completablefuture/cover.jpg
 original_url: https://mp.weixin.qq.com/s/eYhChyzRipSJLl27sNqLCQ

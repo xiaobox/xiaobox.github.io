@@ -1,7 +1,7 @@
 ---
 title: ".DS_Store 这玩意苹果用了 25 年都不删，是故意的"
 slug: 2026-04-24-ds-store-zhe-wan-yi-ping-guo-yong-le-25-nian-dou-bu-shan-shi-gu-yi-de
-description: ""
+description: "解析 macOS 中 .DS_Store 文件的来历与作用：它是 Finder 记录文件夹显示状态的数据库，苹果放弃 xattr 方案而保留它 25 年，是优先保护 Mac 用户体验的刻意取舍。"
 date: 2026-04-24T04:18:35.000Z
 image: 
 original_url: 

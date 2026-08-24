@@ -1,7 +1,7 @@
 ---
 title: "最先被裁掉的，永远是那个「最能干活」的人"
 slug: 2026-07-05-zui-xian-bei-cai-diao-de-yong-yuan-shi-na-ge-zui-neng-gan-hu
-description: ""
+description: "十多年技术管理者复盘裁员逻辑：公司裁的是好替代的人而非不干活的人，只会埋头干活最危险，让价值被看见、学会定义问题和经营人脉才决定职业天花板。"
 date: 2026-07-05T17:27:39.000Z
 image:
 original_url:

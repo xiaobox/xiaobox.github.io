@@ -1,7 +1,7 @@
 ---
 title: "已读未读的发明者，最后被已读未读吃掉了"
 slug: 2026-06-13-yi-du-wei-du-de-fa-ming-zhe-zui-hou-bei-yi-du-wei-du-chi-dia
-description: ""
+description: "从钉钉换帅与 7.5 万字内网长文《置身钉内》切入，剖析钉钉把已读未读式的可见性逻辑用于管理自身，最终与需要慢功夫的 AI 研发范式相冲突。"
 date: 2026-06-13T07:30:22.000Z
 image: 
 original_url: 

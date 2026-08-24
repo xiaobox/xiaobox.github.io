@@ -1,7 +1,7 @@
 ---
 title: "互联网最烦人的发明，起因是一辆汽车"
 slug: 2026-07-01-hu-lian-wang-zui-fan-ren-de-fa-ming-qi-yin-shi-yi-liang-qi-c
-description: ""
+description: "弹窗广告的起源：程序员 Ethan Zuckerman 为隔离汽车广告与用户主页内容写下一段 JS，意外发明了折磨互联网二十多年的弹窗，他后来公开道歉并反思广告模式才是病根。"
 date: 2026-07-01T09:53:00.000Z
 image: 
 original_url: 

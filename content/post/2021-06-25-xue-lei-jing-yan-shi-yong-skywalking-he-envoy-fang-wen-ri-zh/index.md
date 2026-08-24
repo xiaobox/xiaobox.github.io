@@ -1,6 +1,7 @@
 ---
 title: "血泪经验：使用SkyWalking 和 Envoy 访问日志服务对 istio 进行观察（一）"
 slug: 2021-06-25-xue-lei-jing-yan-shi-yong-skywalking-he-envoy-fang-wen-ri-zh
+description: "分享用 SkyWalking 采集 istio 的 Envoy 日志时踩到的版本兼容坑，梳理 istio 与 SkyWalking 各版本对链路、日志和 trace 的支持情况，结论是需先升级 istio 再做集成。"
 date: 2021-06-25T11:37:02.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2021-06-25-xue-lei-jing-yan-shi-yong-skywalking-he-envoy-fang-wen-ri-zh/cover.jpg
 original_url: https://mp.weixin.qq.com/s/StmA_i11AWYxaUmHOKzg4g

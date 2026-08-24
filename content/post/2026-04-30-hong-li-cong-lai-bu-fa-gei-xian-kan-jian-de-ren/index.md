@@ -1,7 +1,7 @@
 ---
 title: "红利从来不发给先看见的人"
 slug: 2026-04-30-hong-li-cong-lai-bu-fa-gei-xian-kan-jian-de-ren
-description: ""
+description: "以房改、淘宝、公众号、直播四轮红利为例，论证错过机会的关键不是认知不足而是付不起下注的代价，红利只分给买得起车票的人，AI 这一轮同理。"
 date: 2026-04-30T10:20:00.000Z
 image: 
 original_url: 

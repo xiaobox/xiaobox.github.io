@@ -1,7 +1,7 @@
 ---
 title: "你每天都见的红色波浪线，今年 31 岁了"
 slug: 2026-06-23-ni-mei-tian-dou-jian-de-hong-se-bo-lang-xian-jin-nian-31-sui
-description: ""
+description: "纪念 Word 拼写检查红色波浪线的作者 Tony Krueger：他 1995 年把检查塞进击键间隙的空闲循环，波浪线设计源自校对标记，沿用至今 31 年。"
 date: 2026-06-23T08:45:00.000Z
 image: 
 original_url: 

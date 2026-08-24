@@ -1,7 +1,7 @@
 ---
 title: "为什么 Postgres 大批量 DELETE 反而越删越忙？"
 slug: 2026-06-16-wei-shen-me-postgres-da-pi-liang-delete-fan-er-yue-shan-yue-
-description: ""
+description: "用 MVCC 原理解释 Postgres 大批量 DELETE 为何越删越忙：删除只是标记旧行版本，留下写入、清理与查询三笔债，长期清理应靠分区表整体丢弃。"
 date: 2026-06-16T06:48:17.000Z
 image: 
 original_url: 

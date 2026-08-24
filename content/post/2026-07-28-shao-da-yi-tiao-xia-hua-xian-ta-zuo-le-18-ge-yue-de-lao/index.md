@@ -1,7 +1,7 @@
 ---
 title: "少打一条下划线，他坐了18个月的牢"
 slug: 2026-07-28-shao-da-yi-tiao-xia-hua-xian-ta-zuo-le-18-ge-yue-de-lao
-description: ""
+description: "加拿大警方调查时把用户名少打一条下划线，让无辜者 Brandon Klayme 蒙冤入狱 18 个月，借这起案件说明现实流程缺乏代码世界的报错与回滚等纠错机制。"
 date: 2026-07-28T04:00:00.000Z
 image:
 original_url:

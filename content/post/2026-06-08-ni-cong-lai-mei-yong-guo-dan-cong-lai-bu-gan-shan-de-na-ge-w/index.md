@@ -1,7 +1,7 @@
 ---
 title: "你从来没用过但从来不敢删的那个文件夹"
 slug: 2026-06-08-ni-cong-lai-mei-yong-guo-dan-cong-lai-bu-gan-shan-de-na-ge-w
-description: ""
+description: "解释 Linux ext 文件系统里 lost+found 目录的来历：它是 mkfs 预先建好的孤儿文件收容所，供 fsck 在文件系统损坏时存放无名文件，因此不能删。"
 date: 2026-06-08T13:20:11.000Z
 image: 
 original_url: 

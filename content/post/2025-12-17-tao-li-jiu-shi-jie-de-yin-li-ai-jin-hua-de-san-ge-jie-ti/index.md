@@ -1,6 +1,7 @@
 ---
 title: "逃离旧世界的引力：AI 进化的三个阶梯"
 slug: 2025-12-17-tao-li-jiu-shi-jie-de-yin-li-ai-jin-hua-de-san-ge-jie-ti
+description: "借「更快的马」比喻梳理 AI 进化的三个阶段：AI Enabled 只是给旧流程加插件，AI Native 让 AI 成为系统中枢，AI Awaken 则指向拥有自主意志的新物种。"
 date: 2025-12-17T03:29:11.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-12-17-tao-li-jiu-shi-jie-de-yin-li-ai-jin-hua-de-san-ge-jie-ti/cover.jpg
 original_url: https://mp.weixin.qq.com/s/LTd0DDIr6HpaIHxssF1hIA

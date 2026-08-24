@@ -1,6 +1,7 @@
 ---
 title: "2024 年终总结"
 slug: 2024-12-29-2024-nian-zhong-zong-jie
+description: "2024 年个人年终总结，回顾走出抑郁焦虑、重建精神世界的历程，向陌生人、朋友、爱人与父母一一致谢，并分享精神支柱不宜过于单一、安全感源自内心信念的感悟。"
 date: 2024-12-29T15:32:08.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-12-29-2024-nian-zhong-zong-jie/cover.jpg
 original_url: https://mp.weixin.qq.com/s/xpMcGhvq_162fmhUqui65Q

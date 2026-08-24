@@ -1,7 +1,7 @@
 ---
 title: "425 元买 3333 美元的 Anthropic 额度，AI 中转站市场到底有多大"
 slug: 2026-08-07-425-yuan-mai-3333-mei-yuan-de-anthropic-e-du-ai-zhong-zhuan
-description: ""
+description: "拆解中国 AI API 中转站产业链：425 元买到 3333 美元 Anthropic 额度的背后是薅试用、拒付、盗用端点等灰黑手段，坏账最终由正规用户分摊。"
 date: 2026-08-07T04:00:00.000Z
 image:
 original_url:

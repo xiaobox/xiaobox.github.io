@@ -1,7 +1,7 @@
 ---
 title: "你电脑里每个 .zip 文件的前两个字节，是一个程序员的名字"
 slug: 2026-08-09-ni-dian-nao-li-mei-ge-zip-wen-jian-de-qian-liang-ge-zi-jie-s
-description: ""
+description: "每个 zip 文件都以发明者 Phil Katz 姓名缩写 PK 开头，他因官司重造格式并免费公开规范让 zip 通行三十多年，本人却在 37 岁潦倒离世。"
 date: 2026-08-09T04:00:00.000Z
 image:
 original_url:

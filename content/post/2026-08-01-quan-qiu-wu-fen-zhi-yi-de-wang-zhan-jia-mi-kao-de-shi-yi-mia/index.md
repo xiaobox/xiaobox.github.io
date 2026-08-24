@@ -1,7 +1,7 @@
 ---
 title: "全球五分之一的网站加密，靠的是一面熔岩灯墙"
 slug: 2026-08-01-quan-qiu-wu-fen-zhi-yi-de-wang-zhan-jia-mi-kao-de-shi-yi-mia
-description: ""
+description: "介绍 Cloudflare 用熔岩灯墙生成加密随机数的 LavaRand 系统：计算机无法产生真随机，密钥的不可预测性最终要从物理世界的混沌现象中获取。"
 date: 2026-08-01T04:00:00.000Z
 image:
 original_url:

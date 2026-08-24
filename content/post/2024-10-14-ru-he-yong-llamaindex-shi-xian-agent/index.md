@@ -1,6 +1,7 @@
 ---
 title: "如何用 LlamaIndex 实现 agent"
 slug: 2024-10-14-ru-he-yong-llamaindex-shi-xian-agent
+description: "从各家 AIGC 产品对智能体的定义切入解释 agent 概念，并用 LlamaIndex 的 ReActAgent 结合自定义函数工具与 RAG 查询引擎实现可控的 agent demo，展示其记忆能力。"
 date: 2024-10-14T10:13:28.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-10-14-ru-he-yong-llamaindex-shi-xian-agent/cover.jpg
 original_url: https://mp.weixin.qq.com/s/nyMcn3cR7NNvjf3X4GLerw

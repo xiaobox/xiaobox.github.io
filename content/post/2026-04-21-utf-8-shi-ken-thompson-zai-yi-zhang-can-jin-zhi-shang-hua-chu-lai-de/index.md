@@ -1,7 +1,7 @@
 ---
 title: "UTF-8 是 Ken Thompson 在一张餐巾纸上画出来的"
 slug: 2026-04-21-utf-8-shi-ken-thompson-zai-yi-zhang-can-jin-zhi-shang-hua-chu-lai-de
-description: ""
+description: "回顾 1992 年 Ken Thompson 在餐巾纸上设计出 UTF-8 的经过与字符编码混战史，解释 Java、JavaScript 因选择 UCS-2 而留下 emoji 长度为 2 的历史包袱。"
 date: 2026-04-21T11:54:32.000Z
 image: 
 original_url: 

@@ -1,7 +1,7 @@
 ---
 title: "你每天盯着看几千次的鼠标光标，其实是歪的"
 slug: 2026-06-27-ni-mei-tian-ding-zhe-kan-ji-qian-ci-de-shu-biao-guang-biao-q
-description: ""
+description: "鼠标光标向左歪 45 度并非美学选择：Alan Kay 在 Xerox Alto 的 16×16 像素屏上被迫画成斜的，这个妥协被亿万用户的习惯锁定，沿用五十多年再没改回来。"
 date: 2026-06-27T15:41:00.000Z
 image: 
 original_url: 

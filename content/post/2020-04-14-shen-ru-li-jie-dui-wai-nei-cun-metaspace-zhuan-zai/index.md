@@ -1,6 +1,7 @@
 ---
 title: "深入理解堆外内存 Metaspace(转载)"
 slug: 2020-04-14-shen-ru-li-jie-dui-wai-nei-cun-metaspace-zhuan-zai
+description: "转载译文，基于JVM开发者Thomas Stüfe的系列文章讲解Metaspace：类元数据的分配与回收、三层内存架构、Compressed Class Space原理及MaxMetaspaceSize调优建议。"
 date: 2020-04-14T02:20:10.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-04-14-shen-ru-li-jie-dui-wai-nei-cun-metaspace-zhuan-zai/cover.jpg
 original_url: https://mp.weixin.qq.com/s/SBmAwpx8oO1RKb4YdQx7gw

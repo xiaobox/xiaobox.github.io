@@ -1,6 +1,7 @@
 ---
 title: "终于出手了，微信公众号原生 RAG 上线，官方 AI 知识库来了！"
 slug: 2025-02-10-zhong-yu-chu-shou-le-wei-xin-gong-zhong-hao-yuan-sheng-rag-s
+description: "微信公众号上线官方智能回复功能，实测其开通步骤与问答效果：读者可在对话中基于历史文章内容提问，相当于公众号原生的 AI 知识库，目前尚不能直接返回文章链接。"
 date: 2025-02-10T09:14:18.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-02-10-zhong-yu-chu-shou-le-wei-xin-gong-zhong-hao-yuan-sheng-rag-s/cover.jpg
 original_url: https://mp.weixin.qq.com/s/J2fONn4fBf_Q1Jl5vyS-WA

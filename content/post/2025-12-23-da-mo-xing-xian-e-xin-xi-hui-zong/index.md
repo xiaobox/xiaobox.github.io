@@ -1,6 +1,7 @@
 ---
 title: "大模型限额信息汇总"
 slug: 2025-12-23-da-mo-xing-xian-e-xin-xi-hui-zong
+description: "梳理大模型 API 速率限制的基本概念（RPM、TPM 等），并汇总 AWS Bedrock、Azure、OpenAI、Google、xAI 等供应商配额的划分维度与共享规则。"
 date: 2025-12-23T06:14:29.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-12-23-da-mo-xing-xian-e-xin-xi-hui-zong/cover.jpg
 original_url: https://mp.weixin.qq.com/s/pbCaPtLTS1_Z29UW10jAvQ

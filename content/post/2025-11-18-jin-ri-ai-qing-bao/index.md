@@ -1,6 +1,7 @@
 ---
 title: "今日 AI 情报"
 slug: 2025-11-18-jin-ri-ai-qing-bao
+description: "AI 情报日报，汇总同程 AI 导览、GPT-5 自主控制思考深度、VinciCoder 多模态代码生成开源、李飞飞谈空间智能，以及千问对标 ChatGPT 的评测分析。"
 date: 2025-11-18T06:27:23.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-11-18-jin-ri-ai-qing-bao/cover.jpg
 original_url: https://mp.weixin.qq.com/s/LAeRiaK5IsAENK2ITDjurg

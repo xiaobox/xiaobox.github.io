@@ -1,7 +1,7 @@
 ---
 title: "发明正则表达式的人，上周走了"
 slug: 2026-04-21-fa-ming-zheng-ze-biao-da-shi-de-ren-shang-zhou-zou-le
-description: ""
+description: "悼念图灵奖得主 Michael Rabin：他与 Scott 证明的 NFA 与 DFA 等价定理成为正则表达式引擎的源头，Miller-Rabin 素性检验至今支撑着 HTTPS 加密。"
 date: 2026-04-21T11:51:32.000Z
 image: 
 original_url: 

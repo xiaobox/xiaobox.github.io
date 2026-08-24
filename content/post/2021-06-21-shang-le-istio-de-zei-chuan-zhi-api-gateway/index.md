@@ -1,6 +1,7 @@
 ---
 title: "上了 istio 的贼船之 API Gateway"
 slug: 2021-06-21-shang-le-istio-de-zei-chuan-zhi-api-gateway
+description: "从自身 istio on k8s 架构出发，分析 K8s Ingress 与 Istio Ingress Gateway 在 API 管理上的不足，提出将云原生 API 网关纳入网格并结合 Sidecar 作为入口的方案。"
 date: 2021-06-21T05:02:18.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2021-06-21-shang-le-istio-de-zei-chuan-zhi-api-gateway/cover.jpg
 original_url: https://mp.weixin.qq.com/s/VSTvUHfGOgTGuIe8q5yj4Q

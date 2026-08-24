@@ -1,7 +1,7 @@
 ---
 title: "有个人在聊天室威胁要黑掉管理员，管理员说来吧我的 IP 是 127.0.0.1"
 slug: 2026-06-29-you-ge-ren-zai-liao-tian-shi-wei-xie-yao-hei-diao-guan-li-yu
-description: ""
+description: "复盘 2005 年德国 IRC 聊天室名场面：自称黑客者攻击管理员报出的 127.0.0.1，接连把自己电脑打崩，顺带讲清回环地址永远指向本机的由来。"
 date: 2026-06-29T02:00:00.000Z
 image: 
 original_url: 

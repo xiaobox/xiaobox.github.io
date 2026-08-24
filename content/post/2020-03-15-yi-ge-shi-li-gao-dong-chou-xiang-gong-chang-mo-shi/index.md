@@ -1,6 +1,7 @@
 ---
 title: "一个实例搞懂抽象工厂模式"
 slug: 2020-03-15-yi-ge-shi-li-gao-dong-chou-xiang-gong-chang-mo-shi
+description: "借界面皮肤库实例讲解抽象工厂模式：对比工厂方法模式类数量膨胀、组件风格难统一的问题，展示抽象工厂如何按产品族创建组件并满足开闭原则。"
 date: 2020-03-15T16:00:00.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-03-15-yi-ge-shi-li-gao-dong-chou-xiang-gong-chang-mo-shi/cover.jpg
 original_url: https://mp.weixin.qq.com/s/hUOOulONykiH8ixl30earg

@@ -1,6 +1,7 @@
 ---
 title: "提升RAG应用性能：使用智谱AI的GLM-4和Embedding-3模型优化文档检索"
 slug: 2024-10-08-ti-sheng-rag-ying-yong-xing-neng-shi-yong-zhi-pu-ai-de-glm-4
+description: "在 LlamaIndex 中自定义集成智谱 AI 的 GLM-4 与 Embedding-3 模型构建 RAG 应用，实测远程 embedding 因同步 HTTP 调用速度不及本地模型，建议在服务器自部署开源 embedding 模型。"
 date: 2024-10-08T07:59:17.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-10-08-ti-sheng-rag-ying-yong-xing-neng-shi-yong-zhi-pu-ai-de-glm-4/cover.jpg
 original_url: https://mp.weixin.qq.com/s/dP1sBSjUVz91BKCBZrsSQg

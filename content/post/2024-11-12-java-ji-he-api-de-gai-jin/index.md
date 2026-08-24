@@ -1,6 +1,7 @@
 ---
 title: "Java 集合 API 的改进"
 slug: 2024-11-12-java-ji-he-api-de-gai-jin
+description: "按 JDK 1.0 到 Java 21 的版本脉络梳理 Java 集合框架的演进，分析 Vector、Hashtable 等早期类的缺陷与各版本新增类和接口的设计动机，涵盖 SequencedCollection 等新特性。"
 date: 2024-11-12T04:13:20.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-11-12-java-ji-he-api-de-gai-jin/cover.jpg
 original_url: https://mp.weixin.qq.com/s/z3Bi_3uyf3lKzVlZ6swAeA

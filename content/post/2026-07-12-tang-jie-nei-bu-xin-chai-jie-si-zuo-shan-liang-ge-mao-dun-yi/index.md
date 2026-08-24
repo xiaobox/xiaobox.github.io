@@ -1,7 +1,7 @@
 ---
 title: "唐杰内部信拆解，四座山、两个矛盾、一套融资话术"
 slug: 2026-07-12-tang-jie-nei-bu-xin-chai-jie-si-zuo-shan-liang-ge-mao-dun-yi
-description: ""
+description: "拆解智谱唐杰《巨浪已来》内部信：摸高计划是配售解禁节点上的融资叙事，四座高峰多为行业共识的包装，完全自我训练与极致安全之间缺少工程接口。"
 date: 2026-07-12T06:07:35.000Z
 image:
 original_url:

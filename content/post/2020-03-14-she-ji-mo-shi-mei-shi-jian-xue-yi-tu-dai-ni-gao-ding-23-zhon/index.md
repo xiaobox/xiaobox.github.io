@@ -1,6 +1,7 @@
 ---
 title: "设计模式没时间学？(一图带你搞定23种设计模式)"
 slug: 2020-03-14-she-ji-mo-shi-mei-shi-jian-xue-yi-tu-dai-ni-gao-ding-23-zhon
+description: "分享Jason McDonald整理的23种设计模式速查卡，按创建型、结构型、行为型分类，每个模式配一张UML图便于快速回顾记忆，文末附原版PDF下载地址。"
 date: 2020-03-14T16:00:00.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-03-14-she-ji-mo-shi-mei-shi-jian-xue-yi-tu-dai-ni-gao-ding-23-zhon/cover.jpg
 original_url: https://mp.weixin.qq.com/s/AqY6KjTL1EG7fvWD8kDgNA

@@ -1,6 +1,7 @@
 ---
 title: "ShangHai Wulumuqi Rd.(M)"
 slug: 2022-11-27-shanghai-wulumuqi-rd-m
+description: "配一张图片，以编号列表记录南京传媒大学、复旦大学、上海交通大学等数十所中国高校的名称。"
 date: 2022-11-27T06:36:23.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2022-11-27-shanghai-wulumuqi-rd-m/cover.jpg
 original_url: https://mp.weixin.qq.com/s/cbaYA66YcqQiHopyPYxUuw

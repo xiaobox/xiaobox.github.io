@@ -1,6 +1,7 @@
 ---
 title: "Shopify 构建生产级 Agentic 系统的方法分析"
 slug: 2025-10-01-shopify-gou-jian-sheng-chan-ji-agentic-xi-tong-de-fang-fa-fe
+description: "解读 Shopify Sidekick 构建生产级 Agentic 系统的经验：用 JIT 指令化解工具膨胀带来的复杂度，以单智能体架构、模块化解耦与评估反馈闭环保障可靠性。"
 date: 2025-10-01T02:12:18.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-10-01-shopify-gou-jian-sheng-chan-ji-agentic-xi-tong-de-fang-fa-fe/cover.jpg
 original_url: https://mp.weixin.qq.com/s/gd8BruVKfHuzyX73H7kSeg

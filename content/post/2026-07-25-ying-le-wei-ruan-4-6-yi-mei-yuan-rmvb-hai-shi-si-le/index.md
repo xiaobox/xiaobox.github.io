@@ -1,7 +1,7 @@
 ---
 title: "赢了微软 4.6 亿美元，rmvb 还是死了"
 slug: 2026-07-25-ying-le-wei-ruan-4-6-yi-mei-yuan-rmvb-hai-shi-si-le
-description: ""
+description: "复盘 rmvb 的兴衰：RealNetworks 打赢微软拿到 4.6 亿美元赔偿，却因带宽存储变便宜让极限压缩失去价值、又拿不到硬件解码而消亡，印证《The Bitter Lesson》的教训。"
 date: 2026-07-25T04:00:00.000Z
 image:
 original_url:

@@ -1,6 +1,7 @@
 ---
 title: "九个技巧，让你的Python代码运行得更快！"
 slug: 2024-10-07-jiu-ge-ji-qiao-rang-ni-de-python-dai-ma-yun-xing-de-geng-kua
+description: "译文，介绍九个提升 Python 运行速度的实用技巧，涵盖字符串拼接、列表创建、集合成员判断、推导式、局部变量、内置模块、缓存装饰器与按需导入等。"
 date: 2024-10-07T14:27:36.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-10-07-jiu-ge-ji-qiao-rang-ni-de-python-dai-ma-yun-xing-de-geng-kua/cover.jpg
 original_url: https://mp.weixin.qq.com/s/qZjPEAqCr3MsydON7wSIdw

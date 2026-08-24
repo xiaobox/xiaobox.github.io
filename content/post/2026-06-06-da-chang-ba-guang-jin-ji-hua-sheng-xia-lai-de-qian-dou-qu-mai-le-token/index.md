@@ -1,7 +1,7 @@
 ---
 title: "大厂把广进计划省下来的钱都去买了 token"
 slug: 2026-06-06-da-chang-ba-guang-jin-ji-hua-sheng-xia-lai-de-qian-dou-qu-mai-le-token
-description: ""
+description: "从大厂裁员与微软禁用 Claude Code 的并置怪象出发，用杰文斯悖论解释按 token 计费让 AI 越好用越烧钱，成本只是从人力科目搬向算力平台而非被省下。"
 date: 2026-06-06T02:00:00.000Z
 image: 
 original_url: 

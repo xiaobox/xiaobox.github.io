@@ -1,7 +1,7 @@
 ---
 title: "AI 公司买走绝版古书，扫描完就销毁"
 slug: 2026-08-03-ai-gong-si-mai-zou-jue-ban-gu-shu-sao-miao-wan-jiu-xiao-hui
-description: ""
+description: "Anthropic 大量收购 2022 年前出版的绝版旧书，扫描后销毁原件：既为获取未被 AI 污染的纯净语料以避免模型坍缩，也是法院认定合理使用的合规路径。"
 date: 2026-08-03T04:00:00.000Z
 image:
 original_url:

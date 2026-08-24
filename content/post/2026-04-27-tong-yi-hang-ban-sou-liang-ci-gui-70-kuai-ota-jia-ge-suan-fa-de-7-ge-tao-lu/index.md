@@ -1,7 +1,7 @@
 ---
 title: "同一航班搜两次贵 70 块？OTA 价格算法的 7 个套路"
 slug: 2026-04-27-tong-yi-hang-ban-sou-liang-ci-gui-70-kuai-ota-jia-ge-suan-fa-de-7-ge-tao-lu
-description: ""
+description: "以 OTA 从业者视角拆解机票动态定价的 7 个套路：虚假库存、价格锚定、探价位、设备指纹、画像定价、渠道分销与大数据杀熟，并给出多端比价等反制办法。"
 date: 2026-04-27T10:00:00.000Z
 image: 
 original_url: 

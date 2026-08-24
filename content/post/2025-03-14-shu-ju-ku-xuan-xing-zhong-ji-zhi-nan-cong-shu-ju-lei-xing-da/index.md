@@ -1,6 +1,7 @@
 ---
 title: "数据库选型终极指南：从数据类型到应用场景，一篇就够了"
 slug: 2025-03-14-shu-ju-ku-xuan-xing-zhong-ji-zhi-nan-cong-shu-ju-lei-xing-da
+description: "从关系型、NoSQL 与大数据生态数据库的分类讲起，结合结构化、半结构化与非结构化数据类型及典型应用场景，给出 MySQL、Redis、MongoDB、HBase 等系统化选型框架。"
 date: 2025-03-14T09:19:52.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-03-14-shu-ju-ku-xuan-xing-zhong-ji-zhi-nan-cong-shu-ju-lei-xing-da/cover.jpg
 original_url: https://mp.weixin.qq.com/s/4RxqoMYIiWRe9yoXbKQ-0A

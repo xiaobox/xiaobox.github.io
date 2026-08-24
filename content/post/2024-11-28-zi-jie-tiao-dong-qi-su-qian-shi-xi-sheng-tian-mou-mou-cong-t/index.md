@@ -1,6 +1,7 @@
 ---
 title: "字节跳动起诉前实习生田某某：从「天之骄子」到「800万赔偿」的惊天反转"
 slug: 2024-11-28-zi-jie-tiao-dong-qi-su-qian-shi-xi-sheng-tian-mou-mou-cong-t
+description: "梳理字节跳动起诉前实习生田某某索赔 800 万元事件：其因资源分配不满在共享模型中植入破坏代码致训练任务屡屡失败，被辞退后拒不认错终被起诉，警示职业操守红线不可触碰。"
 date: 2024-11-28T05:26:39.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-11-28-zi-jie-tiao-dong-qi-su-qian-shi-xi-sheng-tian-mou-mou-cong-t/cover.jpg
 original_url: https://mp.weixin.qq.com/s/12pYWFgaVQGoDB8KTlgngQ

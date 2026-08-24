@@ -1,6 +1,7 @@
 ---
 title: "Redis6.0 以后为什么使用了多线程？"
 slug: 2024-11-18-redis6-0-yi-hou-wei-shen-me-shi-yong-le-duo-xian-cheng
+description: "解析 Redis 单线程模型的真实含义与 6.0 之前坚持单线程的原因，说明 6.0 引入多线程 I/O 是为利用多核分摊网络读写负荷突破瓶颈，而命令执行仍由主线程串行完成。"
 date: 2024-11-18T02:04:32.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-11-18-redis6-0-yi-hou-wei-shen-me-shi-yong-le-duo-xian-cheng/cover.jpg
 original_url: https://mp.weixin.qq.com/s/Gzuxd5zX4CI68IdBCWs0ZA

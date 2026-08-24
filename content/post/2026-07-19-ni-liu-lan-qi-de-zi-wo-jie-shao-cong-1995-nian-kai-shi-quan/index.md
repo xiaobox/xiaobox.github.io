@@ -1,7 +1,7 @@
 ---
 title: "你浏览器的自我介绍，从 1995 年开始全是假话"
 slug: 2026-07-19-ni-liu-lan-qi-de-zi-wo-jie-shao-cong-1995-nian-kai-shi-quan
-description: ""
+description: "追溯浏览器 User-Agent 字符串三十年的演化：从 Netscape 自称 Mozilla 到 IE、Safari、Chrome 层层冒充前辈，解释为何每个浏览器的自我介绍都是叠加的谎言。"
 date: 2026-07-19T04:00:00.000Z
 image:
 original_url:

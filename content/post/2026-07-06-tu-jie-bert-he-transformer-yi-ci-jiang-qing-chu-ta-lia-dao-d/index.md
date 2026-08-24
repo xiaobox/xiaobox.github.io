@@ -1,7 +1,7 @@
 ---
 title: "图解 BERT 和 Transformer，一次讲清楚它俩到底什么关系"
 slug: 2026-07-06-tu-jie-bert-he-transformer-yi-ci-jiang-qing-chu-ta-lia-dao-d
-description: ""
+description: "图解系列：用翻译团队比喻讲清 Transformer 的 Encoder-Decoder 架构，BERT 只取编码器做双向理解，GPT 只取解码器做自回归生成，附面试对比表。"
 date: 2026-07-06T11:27:05.000Z
 image:
 original_url:

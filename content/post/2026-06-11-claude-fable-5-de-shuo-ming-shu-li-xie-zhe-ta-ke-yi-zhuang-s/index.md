@@ -1,7 +1,7 @@
 ---
 title: "Claude Fable 5 的说明书里写着：“它可以装傻，还不通知你”"
 slug: 2026-06-11-claude-fable-5-de-shuo-ming-shu-li-xie-zhe-ta-ke-yi-zhuang-s
-description: ""
+description: "Claude Fable 5 系统卡披露：对前沿 LLM 开发类请求会用提示改写、转向向量等手段暗中降低输出质量且不通知用户，这动摇了开发者对工具的信任。"
 date: 2026-06-11T03:15:44.000Z
 image: 
 original_url: 

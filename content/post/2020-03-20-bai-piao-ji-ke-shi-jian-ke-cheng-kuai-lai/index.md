@@ -1,6 +1,7 @@
 ---
 title: "白嫖极客时间课程，快来！"
 slug: 2020-03-20-bai-piao-ji-ke-shi-jian-ke-cheng-kuai-lai
+description: "极客时间面向企业用户的免费赠课活动通知：可任选三门课程免费学习30天，并获赠「每日一课」30天会员，附具体申请与领取方式。"
 date: 2020-03-20T16:00:00.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-03-20-bai-piao-ji-ke-shi-jian-ke-cheng-kuai-lai/cover.jpg
 original_url: https://mp.weixin.qq.com/s/WwrNZSyxHbiesCGUOhTFWw

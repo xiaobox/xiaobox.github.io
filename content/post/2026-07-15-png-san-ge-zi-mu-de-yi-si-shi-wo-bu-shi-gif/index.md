@@ -1,7 +1,7 @@
 ---
 title: "PNG 三个字母的意思是「我不是 GIF」"
 slug: 2026-07-15-png-san-ge-zi-mu-de-yi-si-shi-wo-bu-shi-gif
-description: ""
+description: "PNG 诞生于 GIF 的 LZW 专利收费风波：1995 年开发者在新闻组发起替代格式 PING Is Not GIF，一个多月定型、次年成为 W3C 标准，此后静态图归 PNG、动图归 GIF。"
 date: 2026-07-15T07:04:05.000Z
 image:
 original_url:

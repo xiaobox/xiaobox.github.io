@@ -1,6 +1,7 @@
 ---
 title: "2025北京 IT技术岗位市场趋势分析"
 slug: 2025-04-17-2025-bei-jing-it-ji-shu-gang-wei-shi-chang-qu-shi-fen-xi
+description: "基于多方招聘数据分析 2025 年北京 IT 岗位市场，呈现「AI 高端岗位紧缺、传统开发测试内卷」的双轨格局，并给出各职能薪酬区间、技能热点与求职建议。"
 date: 2025-04-17T02:20:56.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-04-17-2025-bei-jing-it-ji-shu-gang-wei-shi-chang-qu-shi-fen-xi/cover.jpg
 original_url: https://mp.weixin.qq.com/s/FfUlzLZJYuHeI6PXM7qhyw

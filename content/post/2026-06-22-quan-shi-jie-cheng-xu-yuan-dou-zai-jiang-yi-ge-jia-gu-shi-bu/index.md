@@ -1,7 +1,7 @@
 ---
 title: "全世界程序员都在讲一个假故事-Bug不是来自那只飞蛾"
 slug: 2026-06-22-quan-shi-jie-cheng-xu-yuan-dou-zai-jiang-yi-ge-jia-gu-shi-bu
-description: ""
+description: "考证 bug 一词的真实起源：Grace Hopper 的飞蛾只是圈内玩笑，早在 1878 年爱迪生信件中 bug 已是工程师口语，词根可追溯至中世纪的妖精。"
 date: 2026-06-22T03:01:00.000Z
 image: 
 original_url: 

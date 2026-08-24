@@ -1,6 +1,7 @@
 ---
 title: "Milvus实战：如何用一个数据库提升你的AI项目性能"
 slug: 2024-10-11-milvus-shi-zhan-ru-he-yong-yi-ge-shu-ju-ku-ti-sheng-ni-de-ai
+description: "对比 Chroma、Qdrant、Weaviate 等向量数据库后选择 Milvus 存储 RAG 应用的向量数据，通过 Docker 部署并结合 attu 客户端实战，避免重复 embedding 显著提升检索速度。"
 date: 2024-10-11T08:22:08.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-10-11-milvus-shi-zhan-ru-he-yong-yi-ge-shu-ju-ku-ti-sheng-ni-de-ai/cover.jpg
 original_url: https://mp.weixin.qq.com/s/QENYB6O-7g0atdSyOWQ3wA

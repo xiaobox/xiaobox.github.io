@@ -1,7 +1,7 @@
 ---
 title: "图解抽象工厂模式，从手机全家桶说起"
 slug: 2026-08-06-tu-jie-chou-xiang-gong-chang-mo-shi-cong-shou-ji-quan-jia-to
-description: ""
+description: "用手机全家桶类比图解抽象工厂模式，对比简单工厂与工厂方法，说明产品族一致性的核心价值，并附 GoF 历史背景与面试答题模板。"
 date: 2026-08-06T04:00:00.000Z
 image:
 original_url:

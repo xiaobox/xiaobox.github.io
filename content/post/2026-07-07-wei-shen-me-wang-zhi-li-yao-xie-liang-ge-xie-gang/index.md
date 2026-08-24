@@ -1,7 +1,7 @@
 ---
 title: "为什么网址里要写两个斜杠？"
 slug: 2026-07-07-wei-shen-me-wang-zhi-li-yao-xie-liang-ge-xie-gang
-description: ""
+description: "网址双斜杠的来历：Berners-Lee 从 Apollo 工作站照搬的 authority 起始标记，只有需要找服务器的协议才用它，mailto、tel、data 等协议都不需要。"
 date: 2026-07-07T13:15:06.000Z
 image:
 original_url:

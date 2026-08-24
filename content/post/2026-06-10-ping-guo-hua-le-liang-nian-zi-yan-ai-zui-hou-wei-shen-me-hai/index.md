@@ -1,7 +1,7 @@
 ---
 title: "苹果花了两年自研 AI，最后为什么还是用了 Google 的模型"
 slug: 2026-06-10-ping-guo-hua-le-liang-nian-zi-yan-ai-zui-hou-wei-shen-me-hai
-description: ""
+description: "苹果新 Siri 改用 Google 定制的 1.2 万亿参数 Gemini 模型，分析其自研 AI 两年未果的原因：大模型飞轮已被对手转起，起步晚就追不上。"
 date: 2026-06-10T01:42:08.000Z
 image: 
 original_url: 

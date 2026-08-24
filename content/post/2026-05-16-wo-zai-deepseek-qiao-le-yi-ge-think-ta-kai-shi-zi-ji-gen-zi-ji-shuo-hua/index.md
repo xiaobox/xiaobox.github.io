@@ -1,7 +1,7 @@
 ---
 title: "我在 DeepSeek 敲了一个 <think>，它开始自己跟自己说话"
 slug: 2026-05-16-wo-zai-deepseek-qiao-le-yi-ge-think-ta-kai-shi-zi-ji-gen-zi-ji-shuo-hua
-description: ""
+description: "解析在 DeepSeek 输入框只敲 <think> 就让模型自说自话的现象：这是 Special Token Injection，模板层没把控制 token 当普通文本处理，与训练数据泄露无关。"
 date: 2026-05-16T05:00:00.000Z
 image: 
 original_url: 

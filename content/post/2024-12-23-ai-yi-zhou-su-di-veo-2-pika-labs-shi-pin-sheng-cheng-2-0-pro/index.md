@@ -1,6 +1,7 @@
 ---
 title: "AI 一周速递：Veo 2、Pika Labs 视频生成 2.0、Project Mariner 网络冲浪者、Phi-4"
 slug: 2024-12-23-ai-yi-zhou-su-di-veo-2-pika-labs-shi-pin-sheng-cheng-2-0-pro
+description: "汇总一周 AI 动态：DeepMind 发布支持 4K 分辨率、两分钟时长视频生成的 Veo 2，以及 Pika Labs 视频生成 2.0、微软数学推理模型 Phi-4 和 Project Mariner 等进展。"
 date: 2024-12-23T06:26:17.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-12-23-ai-yi-zhou-su-di-veo-2-pika-labs-shi-pin-sheng-cheng-2-0-pro/cover.jpg
 original_url: https://mp.weixin.qq.com/s/OUq05ItmZ-chU5rVMkcp6w

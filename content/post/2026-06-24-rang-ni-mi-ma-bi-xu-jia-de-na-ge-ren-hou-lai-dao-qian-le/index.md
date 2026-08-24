@@ -1,7 +1,7 @@
 ---
 title: "让你密码必须加 !@#$ 的那个人，后来道歉了"
 slug: 2026-06-24-rang-ni-mi-ma-bi-xu-jia-de-na-ge-ren-hou-lai-dao-qian-le
-description: ""
+description: "密码必须含大写、数字、特殊字符的规则源自 Bill Burr 2003 年一份 8 页 NIST 指南，作者 2017 年公开表示后悔，NIST 也已改推长而易记的短语。"
 date: 2026-06-24T05:50:00.000Z
 image: 
 original_url: 

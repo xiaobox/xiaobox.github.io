@@ -1,6 +1,7 @@
 ---
 title: "如何在服务器上部署开源大模型 GLM-4-9B-Chat  并应用到RAG应用中"
 slug: 2024-10-21-ru-he-zai-fu-wu-qi-shang-bu-shu-kai-yuan-da-mo-xing-glm-4-9b
+description: "在租用的 RTX 3090 GPU 服务器上部署开源大模型 GLM-4-9B-Chat，通过命令行与 FastAPI 测试调用，并以自定义 LLM 方式接入 LlamaIndex，实现 RAG 应用的模型私有化。"
 date: 2024-10-21T07:40:42.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-10-21-ru-he-zai-fu-wu-qi-shang-bu-shu-kai-yuan-da-mo-xing-glm-4-9b/cover.jpg
 original_url: https://mp.weixin.qq.com/s/gPPNHgbW3zHwZLeNdABp6w

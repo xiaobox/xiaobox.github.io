@@ -1,6 +1,7 @@
 ---
 title: "还在用 top htop? 赶紧换 btop 吧，真香！"
 slug: 2024-09-17-hai-zai-yong-top-htop-gan-jin-huan-btop-ba-zhen-xiang
+description: "对比 top、htop 与 btop 三款系统监控工具，介绍 btop 的安装方法、CPU 存储网络进程四大模块、快捷键与主题配置，推荐用它替代传统工具。"
 date: 2024-09-17T03:35:33.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2024-09-17-hai-zai-yong-top-htop-gan-jin-huan-btop-ba-zhen-xiang/cover.jpg
 original_url: https://mp.weixin.qq.com/s/Qr-z0-zL44UjnItmDlsMzg

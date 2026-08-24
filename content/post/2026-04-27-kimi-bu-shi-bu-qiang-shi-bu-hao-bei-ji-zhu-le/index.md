@@ -1,7 +1,7 @@
 ---
 title: "Kimi 不是不强，是不好被记住了"
 slug: 2026-04-27-kimi-bu-shi-bu-qiang-shi-bu-hao-bei-ji-zhu-le
-description: ""
+description: "分析月之暗面的定位困境：Kimi 模型能力不弱，但「200 万字长文本」标签被行业稀释后缺少一句话心智，出路可能在「长任务交给 Kimi」这类具体场景。"
 date: 2026-04-27T10:10:00.000Z
 image: 
 original_url: 

@@ -1,6 +1,7 @@
 ---
 title: "段永平在浙江大学交流总结"
 slug: 2025-01-07-duan-yong-ping-zai-zhe-jiang-da-xue-jiao-liu-zong-jie
+description: "整理段永平在浙江大学交流的要点：价值投资重商业模式与长远眼光、不赚快钱并及时止损，创业须有真实需求且可敢为天下后，以及做对的事情、AI 时代保持独立思考等观点。"
 date: 2025-01-07T08:11:46.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-01-07-duan-yong-ping-zai-zhe-jiang-da-xue-jiao-liu-zong-jie/cover.jpg
 original_url: https://mp.weixin.qq.com/s/Fxnio5KXuLq0MJaZnYZDBA

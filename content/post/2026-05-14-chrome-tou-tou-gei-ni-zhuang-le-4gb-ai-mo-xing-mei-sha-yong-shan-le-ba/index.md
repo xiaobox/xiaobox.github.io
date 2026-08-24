@@ -1,7 +1,7 @@
 ---
 title: "Chrome 偷偷给你装了 4GB AI 模型，没啥用，删了吧"
 slug: 2026-05-14-chrome-tou-tou-gei-ni-zhuang-le-4gb-ai-mo-xing-mei-sha-yong-shan-le-ba
-description: ""
+description: "Chrome 147 起未经同意在本地下载约 4GB 的 Gemini Nano 模型权重，说明它与地址栏 AI 模式无关、多数人用不到，并给出用 flags 与注册表彻底关闭删除的方法。"
 date: 2026-05-14T05:00:00.000Z
 image: 
 original_url: 

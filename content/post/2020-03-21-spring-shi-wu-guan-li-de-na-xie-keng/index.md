@@ -1,6 +1,7 @@
 ---
 title: "spring 事务管理的那些坑"
 slug: 2020-03-21-spring-shi-wu-guan-li-de-na-xie-keng
+description: "总结Spring声明式事务的常见失效场景：非public方法注解不生效、显式捕获异常导致回滚失效、同类方法自调用绕过代理，并从AOP代理机制解释原因与解决办法。"
 date: 2020-03-21T16:00:00.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-03-21-spring-shi-wu-guan-li-de-na-xie-keng/cover.jpg
 original_url: https://mp.weixin.qq.com/s/DbTH28a0v__PC5PBzyH6PA

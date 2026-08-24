@@ -1,7 +1,7 @@
 ---
 title: "你手机上的蓝牙，名字来自维京国王，核心技术是好莱坞女明星发明的"
 slug: 2026-06-25-ni-shou-ji-shang-de-lan-ya-ming-zi-lai-zi-wei-jing-guo-wang-
-description: ""
+description: "蓝牙名称取自统一丹麦的维京国王哈拉尔，logo 是其姓名首字母的北欧符文组合，核心跳频扩频技术则由好莱坞女星海蒂·拉玛于 1942 年发明。"
 date: 2026-06-25T04:54:00.000Z
 image: 
 original_url: 

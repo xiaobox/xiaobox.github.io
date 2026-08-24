@@ -1,7 +1,7 @@
 ---
 title: "所有电子产品都在涨价，你交的是一笔AI税"
 slug: 2026-06-27-suo-you-dian-zi-chan-pin-dou-zai-zhang-jia-ni-jiao-de-shi-yi
-description: ""
+description: "拆解电子产品集体涨价的根源：HBM 每 GB 消耗三倍晶圆，AI 实际吃掉约七成普通内存产能，厂商主动调整分配秩序，消费者交的是一笔隐形 AI 税。"
 date: 2026-06-27T09:26:00.000Z
 image: 
 original_url: 

@@ -1,6 +1,7 @@
 ---
 title: "云原生，你真的懂了吗？"
 slug: 2025-02-22-yun-yuan-sheng-ni-zhen-de-dong-le-ma
+description: "用打水吃水的类比通俗解释云计算与云原生，剖析弹性伸缩、故障自愈、声明式管理与自动化交付四大支柱，并讨论云原生的复杂性悖论与成本收益权衡。"
 date: 2025-02-22T04:00:00.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-02-22-yun-yuan-sheng-ni-zhen-de-dong-le-ma/cover.jpg
 original_url: https://mp.weixin.qq.com/s/3bXPvOTaU01lJFRmGi5QaA

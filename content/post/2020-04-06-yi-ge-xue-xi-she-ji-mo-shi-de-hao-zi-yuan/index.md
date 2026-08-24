@@ -1,6 +1,7 @@
 ---
 title: "一个学习设计模式的好资源"
 slug: 2020-04-06-yi-ge-xue-xi-she-ji-mo-shi-de-hao-zi-yuan
+description: "推荐设计模式学习网站Refactoring Guru，其为每种模式配有直观插图与简明定义，看图即可理解模式意图，多数情况下浏览网站内容即可无需购书。"
 date: 2020-04-06T04:15:27.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-04-06-yi-ge-xue-xi-she-ji-mo-shi-de-hao-zi-yuan/cover.jpg
 original_url: https://mp.weixin.qq.com/s/Y18kq1Cy3cZfMyUGnmidWg

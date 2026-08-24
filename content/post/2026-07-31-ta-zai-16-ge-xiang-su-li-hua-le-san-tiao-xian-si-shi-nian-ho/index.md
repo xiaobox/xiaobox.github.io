@@ -1,7 +1,7 @@
 ---
 title: "他在16个像素里画了三条线，四十年后几十亿人每天在点"
 slug: 2026-07-31-ta-zai-16-ge-xiang-su-li-hua-le-san-tiao-xian-si-shi-nian-ho
-description: ""
+description: "追溯汉堡菜单图标的起源：Norm Cox 1981 年在 Xerox Star 的 16 像素格子里画下三条线，沉寂近三十年后随智能手机复活，顺带盘点以食物命名的各种 UI 控件。"
 date: 2026-07-31T04:00:00.000Z
 image:
 original_url:

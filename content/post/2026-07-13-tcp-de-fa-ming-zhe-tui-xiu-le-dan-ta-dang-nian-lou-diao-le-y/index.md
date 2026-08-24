@@ -1,7 +1,7 @@
 ---
 title: "TCP 的发明者退休了，但他当年漏掉了一样东西"
 slug: 2026-07-13-tcp-de-fa-ming-zhe-tui-xiu-le-dan-ta-dang-nian-lou-diao-le-y
-description: ""
+description: "借 Vint Cerf 退休回顾 1986 年互联网拥塞崩溃：TCP 只管消息到没到而不管网络堵不堵，重传风暴让速度暴跌千倍，Van Jacobson 的慢启动算法沿用至今。"
 date: 2026-07-13T11:10:29.000Z
 image:
 original_url:

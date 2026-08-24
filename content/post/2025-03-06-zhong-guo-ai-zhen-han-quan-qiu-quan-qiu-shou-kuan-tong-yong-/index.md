@@ -1,6 +1,7 @@
 ---
 title: "中国AI震撼全球！全球首款通用AI智能体Manus发布，开启“数字执行者”新时代"
 slug: 2025-03-06-zhong-guo-ai-zhen-han-quan-qiu-quan-qiu-shou-kuan-tong-yong-
+description: "介绍中国团队 Monica.im 发布的通用 AI 智能体 Manus，其在 GAIA 基准测试以 86.5% 的任务完成率超越 OpenAI，并简述创始人肖弘与团队背景。"
 date: 2025-03-06T06:21:31.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-03-06-zhong-guo-ai-zhen-han-quan-qiu-quan-qiu-shou-kuan-tong-yong-/cover.jpg
 original_url: https://mp.weixin.qq.com/s/Sy4tDHN6XI7yc2o1RlsHsQ

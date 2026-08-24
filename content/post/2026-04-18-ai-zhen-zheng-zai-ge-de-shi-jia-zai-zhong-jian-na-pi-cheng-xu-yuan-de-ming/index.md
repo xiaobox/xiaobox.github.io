@@ -1,7 +1,7 @@
 ---
 title: "AI 真正在革的，是夹在中间那批程序员的命"
 slug: 2026-04-18-ai-zhen-zheng-zai-ge-de-shi-jia-zai-zhong-jian-na-pi-cheng-xu-yuan-de-ming
-description: ""
+description: "对照泰勒科学管理与福特装配线的历史，分析 AI 编程浪潮下被裁的正是夹在中间的套路型资深与单一技术栈程序员，指出关键在于认清自己站在装配线的哪一格。"
 date: 2026-04-18T15:40:06.000Z
 image: 
 original_url: 

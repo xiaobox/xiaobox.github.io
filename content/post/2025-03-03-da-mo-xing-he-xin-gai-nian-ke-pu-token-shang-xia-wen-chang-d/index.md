@@ -1,6 +1,7 @@
 ---
 title: "大模型核心概念科普：Token、上下文长度、最大输出，一次讲透"
 slug: 2025-03-03-da-mo-xing-he-xin-gai-nian-ke-pu-token-shang-xia-wen-chang-d
+description: "科普大模型的 Token、最大输出长度与上下文窗口三个核心概念，以 DeepSeek 为例解释多轮对话拼接与上下文截断机制，说明模型「失忆」的原因与使用策略。"
 date: 2025-03-03T06:01:21.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-03-03-da-mo-xing-he-xin-gai-nian-ke-pu-token-shang-xia-wen-chang-d/cover.jpg
 original_url: https://mp.weixin.qq.com/s/SXT2wuM0sox34PRrqWWAzw

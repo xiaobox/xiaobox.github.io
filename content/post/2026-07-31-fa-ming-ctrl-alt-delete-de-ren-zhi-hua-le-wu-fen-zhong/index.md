@@ -1,7 +1,7 @@
 ---
 title: "发明 Ctrl+Alt+Delete 的人，只花了五分钟"
 slug: 2026-07-31-fa-ming-ctrl-alt-delete-de-ren-zhi-hua-le-wu-fen-zhong
-description: ""
+description: "讲述 Ctrl+Alt+Delete 的来历：IBM 工程师 David Bradley 花五分钟写的调试用软重启功能，因手册流传和微软把它变成登录指令，意外成为全球最著名的三键组合。"
 date: 2026-07-31T04:00:00.000Z
 image:
 original_url:

@@ -1,7 +1,7 @@
 ---
 title: "火箭落地为什么不用腿站着，而是用网接住"
 slug: 2026-07-10-huo-jian-luo-di-wei-shen-me-bu-yong-tui-zhan-zhe-er-shi-yong
-description: ""
+description: "长征十号乙全球首次用海上拦阻网回收火箭一子级：省去着陆腿减重约 2 吨、放宽落点精度到正负 50 米，与 SpaceX 的腿着陆是同一道可复用成本题的两种解法。"
 date: 2026-07-10T12:08:11.000Z
 image:
 original_url:

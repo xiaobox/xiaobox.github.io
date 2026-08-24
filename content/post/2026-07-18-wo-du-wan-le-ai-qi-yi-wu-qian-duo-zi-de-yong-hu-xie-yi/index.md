@@ -1,7 +1,7 @@
 ---
 title: "我读完了爱奇艺五千多字的用户协议"
 slug: 2026-07-18-wo-du-wan-le-ai-qi-yi-wu-qian-duo-zi-de-yong-hu-xie-yi
-description: ""
+description: "逐条解读爱奇艺五千字用户协议：会员只是可撤销的许可、缓存内容可被锁死、弹幕影评著作权被永久授予平台、HCDN 占用你的带宽，且各平台条款大同小异。"
 date: 2026-07-18T04:00:00.000Z
 image:
 original_url:

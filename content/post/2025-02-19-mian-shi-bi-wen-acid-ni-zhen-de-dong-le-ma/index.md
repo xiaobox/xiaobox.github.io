@@ -1,6 +1,7 @@
 ---
 title: "面试必问：ACID 你真的懂了吗？"
 slug: 2025-02-19-mian-shi-bi-wen-acid-ni-zhen-de-dong-le-ma
+description: "结合示例讲解数据库事务 ACID 四大特性，深入分析 MySQL InnoDB 如何通过 Undo Log、Redo Log、锁机制与 MVCC 实现原子性、隔离性与持久性。"
 date: 2025-02-19T07:45:55.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-02-19-mian-shi-bi-wen-acid-ni-zhen-de-dong-le-ma/cover.jpg
 original_url: https://mp.weixin.qq.com/s/3_O1u2P11h7Ng94Fyiqq4Q

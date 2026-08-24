@@ -1,6 +1,7 @@
 ---
 title: "经典面试题之HashMap(一)"
 slug: 2020-03-26-jing-dian-mian-shi-ti-zhi-hashmap-yi
+description: "HashMap经典面试题系列第一篇：解释负载因子0.75是时间与空间成本的折中而非源于泊松分布，以及链表树化阈值8与还原阈值6背后的概率统计依据。"
 date: 2020-03-26T08:43:45.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-03-26-jing-dian-mian-shi-ti-zhi-hashmap-yi/cover.jpg
 original_url: https://mp.weixin.qq.com/s/PTeSMRqRoOcbgfnLotiRpw

@@ -1,6 +1,7 @@
 ---
 title: "快手一面（高级java）面试真题分享"
 slug: 2020-05-06-kuai-shou-yi-mian-gao-ji-java-mian-shi-zhen-ti-fen-xiang
+description: "快手高级Java一面真题及参考答案：ArrayList与LinkedList的区别及操作复杂度、HashMap数据结构、Redis分布式锁setnx、volatile的局限与CAS原子类原理等。"
 date: 2020-05-06T10:37:03.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-05-06-kuai-shou-yi-mian-gao-ji-java-mian-shi-zhen-ti-fen-xiang/cover.jpg
 original_url: https://mp.weixin.qq.com/s/ihUYEQ97Bhzcg8wr9BAy8A

@@ -1,7 +1,7 @@
 ---
 title: "一个数据包的冒险，从你敲下回车到页面亮起来"
 slug: 2026-08-08-yi-ge-shu-ju-bao-de-mao-xian-cong-ni-qiao-xia-hui-che-dao-ye
-description: ""
+description: "以数据包第一人称重讲「输入 URL 到页面展示」经典面试题，串起 DNS 解析、TCP 与 TLS 握手、服务器处理、浏览器渲染到四次挥手的九个阶段。"
 date: 2026-08-08T04:00:00.000Z
 image:
 original_url:

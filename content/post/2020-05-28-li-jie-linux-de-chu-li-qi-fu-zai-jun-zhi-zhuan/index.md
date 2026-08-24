@@ -1,6 +1,7 @@
 ---
 title: "理解 Linux 的处理器负载均值（转）"
 slug: 2020-05-28-li-jie-linux-de-chu-li-qi-fu-zai-jun-zhi-zhuan
+description: "转载文章，以行车过桥比喻解释Linux负载均值：三个数字对应一、五、十五分钟平均负载，多核系统按核心数衡量，长期超过0.70就应排查原因。"
 date: 2020-05-28T11:00:03.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2020-05-28-li-jie-linux-de-chu-li-qi-fu-zai-jun-zhi-zhuan/cover.jpg
 original_url: https://mp.weixin.qq.com/s/1whvJPQ5Y9PvA2K4xCAj-Q

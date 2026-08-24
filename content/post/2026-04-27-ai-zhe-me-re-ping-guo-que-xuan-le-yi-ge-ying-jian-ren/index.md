@@ -1,7 +1,7 @@
 ---
 title: "AI 这么热，苹果却选了一个硬件人"
 slug: 2026-04-27-ai-zhe-me-re-ping-guo-que-xuan-le-yi-ge-ying-jian-ren
-description: ""
+description: "解读苹果换帅：库克卸任、硬件出身的 Ternus 接任 CEO 并由 Srouji 扩权，苹果在 AI 时代把筹码押回设备与芯片，赌的是 AI 入口最终落回硬件。"
 date: 2026-04-27T10:20:00.000Z
 image: 
 original_url: 

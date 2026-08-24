@@ -1,7 +1,7 @@
 ---
 title: "银行还在用一种 1959 年的编程语言，快没人会写了"
 slug: 2026-08-12-yin-xing-hai-zai-yong-yi-zhong-1959-nian-de-bian-cheng-yu-ya
-description: ""
+description: "全球银行核心系统仍依赖 1959 年诞生的 COBOL，代码难以重写、会写的人平均 55 岁并陆续退休，而中国四大行已用五到七年完成分布式替代。"
 date: 2026-08-12T04:00:00.000Z
 image:
 original_url:

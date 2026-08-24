@@ -1,6 +1,7 @@
 ---
 title: "为什么大厂没有做出 DeepSeek？"
 slug: 2025-02-15-wei-shen-me-da-chang-mei-you-zuo-chu-deepseek
+description: "从技术路线、组织文化与商业化压力三方面分析国内大厂未能做出 DeepSeek 的原因，指出 MoE 架构创新、扁平组织与容错文化是其突围关键。"
 date: 2025-02-15T14:56:17.000Z
 image: https://pub-f29bf2b53160470c9a85250116509a24.r2.dev/post/2025-02-15-wei-shen-me-da-chang-mei-you-zuo-chu-deepseek/cover.jpg
 original_url: https://mp.weixin.qq.com/s/GbRmY87rzE7CgKYaaOngYQ
